@@ -158,6 +158,8 @@ img{
 
 body{
   color: #000;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 header {
   background-color: #1e74ff;
@@ -675,12 +677,22 @@ h2.heading {
 p.sub-heading {
   font-size: 15px;
 }
+.desc-text {
+  padding-top: 45px;
+}
 }
 
 @media(max-width: 767px){
   .step {
   margin-bottom: 20px;
   min-height: auto;
+}
+
+.desc-text {
+  padding: 25px 0;
+}
+.desc-text h3{
+  font-size: 23px;
 }
 }
 
