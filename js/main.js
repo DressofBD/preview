@@ -43,3 +43,7 @@ $('.owl-carousel').owlCarousel({
 
 
 
+$('.counter').countUp({
+	  'time': 3000,
+	  'delay': 50
+	});
