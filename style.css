@@ -158,8 +158,8 @@ img{
 
 body{
   color: #000;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 header {
   background-color: #1e74ff;
@@ -342,9 +342,12 @@ h2.heading {
   color: #0038ec;
   margin-right: 10px;
 }
-img.oval{
-  position: absolute;
-  left: 0;
+img.oval {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 .desc-img{
   position: relative;
