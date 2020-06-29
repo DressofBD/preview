@@ -138,7 +138,7 @@
     </section>
     <section class="company-steps">
       <div class="overlay">
-        <div class="container animatedParent">
+        <div class="container animatedParent"  data-appear-top-offset='300'>
           <h2 class="heading animated growIn">貴社はわずか4STEPのみ！煩わしい作業は当社にお任せください！</h2>
           <div class="row animated fadeInUpShort">
             <div class="col-md-3">
@@ -171,8 +171,8 @@
     </section>
     <section class="project-results">
       <div class="container animatedParent">
-        <h2 class="heading animated fadeInLeft">多くの案件紹介実績</h2>
-        <p class="sub-heading animated fadeInRight">海外の大学生や社会人を対象にした日本への就職／転職フェアやセミナーなど豊富な実績を通して多くの 日本企業から高たかい信頼を得えているConnect Job Workersだから安心です。</p>
+        <h2 class="heading animated fadeInUpShort">多くの案件紹介実績</h2>
+        <p class="sub-heading animated fadeInUpShort">海外の大学生や社会人を対象にした日本への就職／転職フェアやセミナーなど豊富な実績を通して多くの 日本企業から高たかい信頼を得えているConnect Job Workersだから安心です。</p>
         <div class="logos animated fadeInUpShort">
           <img src="img/results-logo.jpg" alt="logo">
           <img src="img/results-logo.jpg" alt="logo">
@@ -188,20 +188,20 @@
           <img src="img/results-logo.jpg" alt="logo">
         </div>
         <div class="row company-icons">
-          <div class="col-md-4 animated fadeInLeft">
+          <div class="col-md-4 animated fadeInUpShort">
             <img src="img/comp1.png" alt="company icon">
             <p>支援機関数</p>
-            <h2>100機関</h2>
+            <h2><span class="counter">100</span>機関</h2>
           </div>
           <div class="col-md-4 animated fadeInUpShort">
             <img src="img/comp2.png" alt="company icon">
             <p>人 登録企業数</p>
-            <h2>1,000社</h2>
+            <h2><span class="counter"  data-counter-time="5000">1000</span>社</h2>
           </div>
-          <div class="col-md-4 animated fadeInRight">
+          <div class="col-md-4 animated fadeInUpShort">
             <img src="img/comp3.png" alt="company icon">
             <p>登録外国人数</p>
-            <h2>6,000人</h2>
+            <h2><span class="counter" data-counter-time="5000" data-counter-delay="10">6000</span>人</h2>
           </div>
         </div>
         <a href="#!"  class="registrar-btn">企業登録はこちら</a>
@@ -242,8 +242,8 @@
     </section>
     <section class="specific-skill">
       <div class="container animatedParent">
-        <h2 class="heading animated fadeInLeft">特定技能とは</h2>
-        <p class="sub-heading animated fadeInRight">2019年4月に新あたらしく設置された在留資格です。</p>
+        <h2 class="heading animated fadeInUpShort">特定技能とは</h2>
+        <p class="sub-heading animated fadeInUpShort">2019年4月に新あたらしく設置された在留資格です。</p>
         <table class="animated fadeInUpShort">
           <tr>
             <td style="background-color: #ed5223;"></td>
@@ -302,7 +302,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer animatedParent">
+    <footer class="footer animatedParent" data-appear-top-offset='100'>
       <div class="container animated">
         <img src="img/logo.png" class="footer-logo animated fadeInLeftShort" alt="logo">
         <ul class="footer-links animated fadeInRightShort">
@@ -323,7 +323,10 @@
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/css3-animate-it.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.js"></script>
     <script src="js/main.js"></script>
+
     <script type="text/javascript">
       var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="img/back-to-top.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
     </script>
