@@ -876,8 +876,13 @@ input[type='checkbox'] {
 	height: 6rem;
 	background: url('../images/hexagon-green.svg') center center no-repeat;
 	background-size: 6rem 6rem;
+	background: #00bf15;
+	border-radius: 50%;
 }
-
+/*.card{transition: 0.5s;}
+.card:hover{
+	transform: scale(1.1);
+}*/
 .cards-1 .fa-stack-1x {
 	color: #fff;
 	font-size: 2rem;
