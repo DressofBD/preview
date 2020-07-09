@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy BirthDay! | PRUDENTIAL</title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(img/FSAlbertPro-Bold.otf);
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'FSAlbertPro-Bold';
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.p-g-card {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.p-g-card img{
+  max-width: 100%;
+  height: auto;
+}
+.p-g-card .pabsolute{
+  position: absolute;
+}
+.p-g-card .prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.p-g-card .cake {
+  bottom: 19%;
+  width: 86%;
+  height: auto;
+  left: 50%;
+  margin-left: -43%;
+  z-index: 8;
+  display: block;
+}
+@keyframes hbd {
+  0% { transform: rotate(-2deg);}
+  100% { transform: rotate(2deg);}
+}
+.p-g-card .hbd {
+  top: 16%;
+  width: 66%;
+  height: auto;
+  left: 50%;
+  margin-left: -33%;
+  animation: hbd 4s ease-in-out infinite alternate;
+  transform-origin: bottom left;
+}
+.p-g-card .text-box {
+  bottom: 7%;
+  text-align: center;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  z-index: 99;
+}
+.p-g-card p {
+  margin: 6px 0;
+  font-size: 21px;
+  color: #0d2245;
+}
+.p-g-card .bg {
+  height: auto;
+  margin-bottom: -10px;
+}
+.p-g-card .name-box {
+  top: 6%;
+  width: 100%;
+  color: #0d2245;
+  text-align: left;
+  font-size: 16px;
+  z-index: 9;
+  left: 10%;
+}
+.p-g-card .tbox-img {
+  bottom: 6%;
+  width: 74%;
+  left: 50%;
+  margin-left: -37%;
+  z-index: 99;
+}
+@keyframes ta {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(4deg);}
+}
+.p-g-card .ta{
+  width: 17%;
+  animation: ta 2s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+.p-g-card .ta1 {
+  bottom: 21%;
+  left: 9%;
+  z-index: 9;
+  width: 15%;
+}
+.p-g-card .ta2 {
+  bottom: 35.5%;
+  left: 37.5%;
+  width: 12%;
+  animation-delay: .7s;
+}
+.p-g-card .ta3 {
+  bottom: 28.8%;
+  left: 40%;
+  width: 15%;
+  z-index: 10;
+  animation-delay: 1.5s;
+}
+.p-g-card .ta4 {
+  bottom: 31.7%;
+  width: 11%;
+  right: 28%;
+  animation-delay: .5s;
+}
+.p-g-card .ta5 {
+  bottom: 20%;
+  width: 12%;
+  right: 14.5%;
+  z-index: 10;
+}
+.p-g-card .bgm{
+  display: none;
+}
+@media screen and (max-width:979px){
+.p-g-card {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+.p-g-card .hbd {
+  width: 76%;
+  margin-left: -38%;
+  top: 16%;
+}
+.p-g-card .cake{
+  bottom: 24%;
+}
+.p-g-card .ta1 {
+  bottom: 26%;
+}
+.p-g-card .ta2 {
+  bottom: 37%;
+  width: 13%;
+}
+.p-g-card .ta3 {
+  bottom: 32%;
+}
+.p-g-card .ta4 {
+  bottom: 34.1%;
+}
+.p-g-card .ta5 {
+  bottom: 24.8%;
+}
+.p-g-card .name-box {
+  font-size: 12px;
+}
+.p-g-card .text-box {
+  bottom: 8%;
+  width: 72%;
+  margin-left: -36%;
+}
+.p-g-card p {
+  font-size: 16px;
+}
+.p-g-card .tbox-img {
+  bottom: 8.5%;
+  width: 90%;
+  margin-left: -45%;
+}
+.p-g-card .bg{
+  display: none;
+}
+.p-g-card .bgm {
+  height: 800px;
+  display: block;
+  width: 420px !important;
+}
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="p-g-card">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bg-m.jpg" class=" bgm">
+        <div class="pabsolute name-box">
+          <h2>Dear <$name$></h2>
+        </div>
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/cake.png" class="pabsolute cake">
+        <img src="img/hbd.png" class="pabsolute hbd">
+        <img src="img/ta1.png" class="pabsolute ta ta1">
+        <img src="img/ta2.png" class="pabsolute ta ta2">
+        <img src="img/ta3.png" class="pabsolute ta ta3">
+        <img src="img/ta4.png" class="pabsolute ta ta4">
+        <img src="img/ta5.png" class="pabsolute ta ta5">
+        <img src="img/text-box.png" class="pabsolute tbox-img">
+        <div class="pabsolute text-box">
+          <p>Celebrating this special day with your loved ones is like a cherry on top. Continue to dream big as you start a new chapter in life!</p>
+        </div>
+      </section>
+   </body>
+</html>
+
