@@ -1063,6 +1063,9 @@ section {
   max-width: 50%;
   margin: 0 auto;
 }
+.s3b-block h5 {
+  margin-top: 15px;
+}
 .s3b-desc {
   max-width: 100%;
   padding-left: 20px;
