@@ -1006,7 +1006,9 @@ footer p, footer a{
 .s3-b1 p{
   padding: 0;
 }
-
+.s2-circle3 {
+  left: -333px;
+}
 
 
 
@@ -1085,7 +1087,9 @@ section {
 .s6-btm p {
   font-size: 17px;
 }
-
+.s2-circle3 {
+  left: -450px;
+}
 }
 
 @media(max-width: 520px){
@@ -1095,7 +1099,9 @@ section {
 #topcontrol {
   width: 36px;
 }
-
+.s2-circle3 {
+  left: -530px;
+}
   
 }
 
