@@ -720,6 +720,7 @@ h3.dots span::before {
   margin-top: 15px;
   font-size: 14px;
   text-align: center;
+  color: #085fa9;
 }
 .s5-block .line {
   display: block;
