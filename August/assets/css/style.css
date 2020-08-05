@@ -779,7 +779,7 @@ h3.dots span::before {
   -ms-transition: 0.5s;
 }
 .s5-block:hover img{
-  box-shadow: 7px 7px 0px white,-7px -7px 0px #085fa9,16px 16px 16px #a4a4a4;
+  box-shadow: 7px 7px 0px #085fa9;
 }
 .s5-block p {
   margin-top: 15px;
