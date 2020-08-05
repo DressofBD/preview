@@ -377,7 +377,6 @@ h3.dots span::before {
 }
 .s-heading {
   color: #085fa9;
-  margin-bottom: 30px;
 }
 .sub-heading {
   margin-bottom: 30px;
@@ -387,7 +386,7 @@ h3.dots span::before {
   padding-right: 0;
 }
 .section-2 .animated.fadeInLeftShort img{
-  max-width: 600px;
+  max-width: 650px;
   float: right;
 }
 .s2-desc {
@@ -553,6 +552,9 @@ h3.dots span::before {
 }
 .s3-btm .container {
   position: relative;
+}
+.s3-btm .s-heading, .section-5 .s-heading{
+  margin-bottom: 30px;
 }
 .speaker {
   background-color: #085fa9;
@@ -1028,7 +1030,7 @@ footer p, footer a{
   max-width: 50%;
 }
 .header-top2 h2 {
-  font-size: 30px;
+  font-size: 26px;
 }
 .s2-blocks {
   margin-top: 45px;
