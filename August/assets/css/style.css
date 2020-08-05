@@ -754,6 +754,7 @@ h3.dots span::before {
   margin-left: -150px;
   width: 300px;
   border: 1px solid transparent;
+  font-weight: bold;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -773,6 +774,7 @@ h3.dots span::before {
   color: #fff;
   font-size: 25px;
   margin: 0 auto;
+  font-weight: bold;
 }
 .s6-top {
   background-image: url(../images/s6img.jpg);
@@ -834,6 +836,7 @@ h3.dots span::before {
 }
 .s6-btm .s-para{
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 
@@ -1010,12 +1013,14 @@ section {
   margin-bottom: 20px;
 }
 .s6-top-desc p {
-  font-size: 20px;
+  font-size: 17px;
 }
 .f-top {
   max-width: 100%;
 }
-
+.s6-btm p {
+  font-size: 17px;
+}
 
 }
 
