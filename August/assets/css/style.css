@@ -473,7 +473,7 @@ h3.dots span::before {
 }
 .s3-blocks {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   padding: 50px 0 30px 0;
 }
@@ -682,10 +682,10 @@ h3.dots span::before {
   padding: 10px;
   background: #f0eff4;
   display: flex;
-  align-items: center;
   position: relative;
   margin-bottom: 35px;
   box-shadow: 0px 2px 5px #ccc;
+  min-height: 150px;
   transform: skewX(-5deg);
   -webkit-transform: skewX(-5deg);
   -o-transform: skewX(-5deg);
@@ -715,7 +715,9 @@ h3.dots span::before {
 .s3b-block img {
   max-width: 20%;
 }
-.s3b-block h5{}
+.s3b-block h5 {
+  padding-top: 10px;
+}
 .s3b-block p {
   font-size: 14px;
 }
@@ -736,7 +738,7 @@ h3.dots span::before {
 /*section-4*/
 .section-4 {
   background: #e8eced;
-  padding-top: 30px;
+  padding: 30px 0;
   margin-top: 55px;
 }
 .section-4 .s-para{
@@ -851,8 +853,8 @@ h3.dots span::before {
   margin-top: -160px;
 }
 .s6-top-overlay {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   width: 100%;
   height: 100%;
   background: rgba(16, 60, 85, 0.64);
@@ -1075,7 +1077,7 @@ section {
   margin: 0 auto;
 }
 .s3b-block h5 {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .s3b-desc {
   max-width: 100%;
@@ -1103,6 +1105,9 @@ section {
 }
 .s2-circle3 {
   left: -450px;
+}
+.s3-blocks {
+  justify-content: space-around;
 }
 }
 
