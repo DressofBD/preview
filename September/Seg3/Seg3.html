@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy BirthDay! | PRUDENTIAL</title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(img/FSAlbertPro-Bold.otf);
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'FSAlbertPro-Bold';
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.p-g-card {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.p-g-card img{
+  max-width: 100%;
+  height: auto;
+}
+.p-g-card .pabsolute{
+  position: absolute;
+}
+.p-g-card .prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+@keyframes hbd {
+  0% {filter: brightness(50%);}
+  100% {filter: brightness(130%);}
+}
+.p-g-card .hbd {
+  top: 10%;
+  width: 90%;
+  height: auto;
+  left: 50%;
+  margin-left: -45%;
+  animation: hbd 2s ease-in-out infinite alternate;
+}
+.p-g-card .text-box {
+  top: 41%;
+  text-align: left;
+  width: 54%;
+  right: 3%;
+  z-index: 99;
+  line-height: 25px;
+}
+.p-g-card p {
+  margin: 6px 0;
+  font-size: 20px;
+  color: #fff;
+}
+.p-g-card .bg {
+  height: auto;
+  margin-bottom: -10px;
+}
+.p-g-card .name-box {
+  top: 2%;
+  width: 100%;
+  z-index: 9;
+  left: 7%;
+  max-width: 55%;
+}
+.p-g-card .name-box h2{
+  margin: 20px 0;
+  color: #fff;
+  text-align: left;
+  font-size: 24px;
+}
+.p-g-card .bgm{
+  display: none;
+}
+@keyframes ball {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+  }
+}
+.p-g-card .ball{
+  animation: ball 2s ease-in-out infinite alternate;
+}
+.p-g-card .ball1 {
+  top: 3%;
+  left: -19%;
+  width: 36%;
+}
+.p-g-card .ball2 {
+  left: 50%;
+  width: 20%;
+  top: -7%;
+  margin-left: -10%;
+}
+.p-g-card .ball3 {
+  top: 40%;
+  width: 58%;
+  right: -20%;
+}
+.p-g-card .ball4 {
+  bottom: 14%;
+  left: 0%;
+  width: 16%;
+}
+@media screen and (max-width:979px){
+.p-g-card {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+.p-g-card .hbd {
+  width: 90%;
+  margin-left: -45%;
+  top: 16%;
+}
+.p-g-card .cake{
+  bottom: 24%;
+}
+.p-g-card .name-box {
+  font-size: 12px;
+  top: 2%;
+}
+.p-g-card .text-box {
+  width: 55%;
+  line-height: 17px;
+  right: 7%;
+}
+.p-g-card p {
+  font-size: 15px;
+}
+.p-g-card .ball2 {
+  top: -5%;
+}
+.p-g-card .ball4 {
+  bottom: 19%;
+  left: -3%;
+}
+.p-g-card .bg{
+  display: none;
+}
+.p-g-card .bgm {
+  height: 800px;
+  display: block;
+  width: 420px !important;
+}
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="p-g-card">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bg-m.jpg" class=" bgm">
+        <div class="pabsolute name-box">
+          <h2>Dear  <$name$> </h2>
+        </div>
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/hbd.png" class="pabsolute hbd">
+        <img src="img/ball.png" class="pabsolute ball ball1">
+        <img src="img/ball.png" class="pabsolute ball ball2">
+        <img src="img/ball.png" class="pabsolute ball ball3">
+        <img src="img/ball.png" class="pabsolute ball ball4">
+        <div class="pabsolute text-box">
+          <p>You may be getting older as time flies by but birthday celebration never gets old. Cheers to another remarkable year! </p>
+        </div>
+      </section>
+   </body>
+</html>
+

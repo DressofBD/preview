@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy BirthDay! | PRUDENTIAL</title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(img/FSAlbertPro-Bold.otf);
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'FSAlbertPro-Bold';
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.p-g-card {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.p-g-card img{
+  max-width: 100%;
+  height: auto;
+}
+.p-g-card .pabsolute{
+  position: absolute;
+}
+.p-g-card .prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.p-g-card .hbd {
+  top: 12%;
+  width: 100%;
+  height: auto;
+  left: 0%;
+  right: 0%;
+}
+.p-g-card .text-box {
+  top: 38%;
+  text-align: center;
+  width: 78%;
+  display: block;
+  z-index: 99;
+  left: 50%;
+  margin-left: -39%;
+}
+.p-g-card p {
+  margin: 6px 0;
+  font-size: 21px;
+  color: #000;
+}
+.p-g-card .bg {
+  height: auto;
+  margin-bottom: -10px;
+}
+.p-g-card .name-box {
+  top: 2%;
+  width: 100%;
+  z-index: 9;
+  left: 7%;
+  max-width: 55%;
+}
+.p-g-card .name-box h2{
+  margin: 20px 0;
+  color: #fff;
+  text-align: left;
+  font-size: 24px;
+}
+.p-g-card .rman {
+  bottom: -5%;
+  left: 0%;
+  width: 58%;
+  animation: rman 2s ease-in-out infinite alternate;
+}
+@keyframes rman {
+  0% { 
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+  100% { 
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+  }
+}
+.p-g-card .bgm{
+  display: none;
+}
+@media screen and (max-width:979px){
+.p-g-card {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+.p-g-card .hbd {
+  top: 16%;
+}
+.p-g-card .rman {
+  bottom: -1%;
+  left: -6%;
+  width: 69%;
+}
+.p-g-card .name-box {
+  font-size: 12px;
+  top: 2%;
+}
+.p-g-card .text-box {
+  top: 36%;
+  width: 68%;
+  margin-left: -34%;
+}
+.p-g-card p {
+  font-size: 16px;
+}
+.p-g-card .bg{
+  display: none;
+}
+.p-g-card .bgm {
+  height: 800px;
+  display: block;
+  width: 420px !important;
+}
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="p-g-card">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bg-m.jpg" class=" bgm">
+        <div class="pabsolute name-box">
+          <h2>Dear <$name$></h2>
+        </div>
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/cake.png" class="pabsolute cake">
+        <img src="img/hbd.png" class="pabsolute hbd">
+        <img src="img/rman.png" class="pabsolute rman">
+        <div class="pabsolute text-box">
+          <p>Get the party started on the most exciting day of the year! There's never a dull moment when you celebrate together with friends and family!</p>
+        </div>
+      </section>
+   </body>
+</html>
+
