@@ -84,10 +84,35 @@ body {
   text-align: left;
   font-size: 24px;
 }
-.p-g-card .rman {
+.p-g-card .rman1 {
   bottom: -5%;
   left: 0%;
   width: 58%;
+  z-index: 4;
+}
+.p-g-card .rman2 {
+  bottom: -4%;
+  width: 43%;
+  left: 31%;
+  z-index: 3;
+  animation-delay: 1s !important;
+}
+.p-g-card .rman2m{
+  display: none;
+}
+.p-g-card .rman3 {
+  bottom: -14%;
+  width: 56%;
+  right: -4%;
+  z-index: 5;
+  animation: rman2 2s ease-in-out infinite alternate;
+}
+.p-g-card .rman4 {
+  right: 0%;
+  bottom: 24%;
+  width: 30%;
+}
+.p-g-card .rman{
   animation: rman 2s ease-in-out infinite alternate;
 }
 @keyframes rman {
@@ -99,6 +124,19 @@ body {
     transform: translateX(10px);
     -webkit-transform: translateX(10px);
   }
+}
+@keyframes rman2 {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(3deg);
+  }
+}
+
+.p-g-card .rman3 {
+  animation: rman2 2s ease-in-out infinite alternate;
+  transform-origin: bottom center;
 }
 .p-g-card .bgm{
   display: none;
@@ -112,14 +150,29 @@ body {
 .p-g-card .hbd {
   top: 16%;
 }
-.p-g-card .rman {
+.p-g-card .rman1 {
   bottom: -1%;
   left: -6%;
   width: 69%;
 }
+.p-g-card .rman2{
+  display: none;
+}
+.p-g-card .rman2m {
+  display: block;
+  bottom: -5%;
+  width: 52%;
+  left: 29%;
+  z-index: 3;
+  animation-delay: 1s !important;
+}
+.p-g-card .rman3 {
+  bottom: -4%;
+  right: -7%;
+}
 .p-g-card .name-box {
   font-size: 12px;
-  top: 2%;
+  top: 0%;
 }
 .p-g-card .name-box h2 {
   font-size: 20px;
@@ -154,7 +207,11 @@ body {
         <img src="img/Prudential.png" class="pabsolute prudential-logo">
         <img src="img/cake.png" class="pabsolute cake">
         <img src="img/hbd.png" class="pabsolute hbd">
-        <img src="img/rman.png" class="pabsolute rman">
+        <img src="img/rman1.png" class="pabsolute rman rman1">
+        <img src="img/rman2.png" class="pabsolute rman rman2">
+        <img src="img/rman2m.png" class="pabsolute rman rman2m">
+        <img src="img/rman3.png" class="pabsolute rman rman3">
+        <img src="img/rman4.png" class="pabsolute rman rman4">
         <div class="pabsolute text-box">
           <p>Get the party started on the most exciting day of the year! There's never a dull moment when you celebrate together with friends and family!</p>
         </div>
