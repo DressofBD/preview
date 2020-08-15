@@ -424,4 +424,7 @@ section.service {
 .news-ticker {
   padding: 20px 0 50px 0;
 }
+header .form-inline button {
+  top: -13px;
+}
 }
