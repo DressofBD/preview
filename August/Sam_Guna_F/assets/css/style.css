@@ -183,6 +183,9 @@ header.header{
   padding: 5px 10px;
 }
 .logo {
+  max-width: 120px;
+}
+.chinese {
   max-width: 200px;
 }
 .nav-link {
@@ -200,6 +203,10 @@ header.header{
 }
 .navbar {
   padding: 18px 10px;
+}
+.navbar-toggler {
+  color: #016faa;
+  font-size: 30px;
 }
 header .form-inline{
   position: relative;
@@ -254,6 +261,9 @@ section.service {
   text-align: center;
   font-weight: 500;
   font-style: normal;
+}
+.sheading a{
+  color: #212529;
 }
 .ssubheading {
   color: #ababab;
@@ -388,4 +398,30 @@ section.service .row{
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px){
+  .sheading {
+  font-size: 30px;
+}
+.ssubheading {
+  font-size: 14px;
+}
+.logo {
+  max-width: 80px;
+}
+section.service {
+  padding: 50px 0;
+}
+.news-ticker {
+  padding: 20px 0 50px 0;
+}
 }
