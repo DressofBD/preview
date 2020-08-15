@@ -447,4 +447,13 @@ header .form-inline button {
   padding-top: 2px !important;
   right: 2px;
 }
+header.header {
+  height: 500px;
+}
+.wlcm {
+  padding-top: 20px;
+}
+.c-j-video-back .back-video {
+  width: 250% !important;
+}
 }
