@@ -27,8 +27,3 @@
     speed: 25,
     timeout: 0.5
   });
-
-  // Hide menu onclick on mobile  
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
