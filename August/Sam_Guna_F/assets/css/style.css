@@ -208,6 +208,18 @@ header.header{
   color: #016faa;
   font-size: 30px;
 }
+.dropdown-menu {
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown-item {
+  color: #fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #c30d08 ;
+  background-color: transparent;
+}
 header .form-inline{
   position: relative;
 }
@@ -417,6 +429,9 @@ section.service .row{
 }
 .logo {
   max-width: 80px;
+}
+.dropdown-item {
+  text-align: center;
 }
 section.service {
   padding: 50px 0;
