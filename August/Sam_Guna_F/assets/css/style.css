@@ -245,7 +245,9 @@ header .form-inline .form-control{
   color: #c30d08;
   font-family: Playfair Display;
 }
-
+.footer .animatedParent{
+  overflow: hidden;
+}
 
 .slogan .slitm {
   font-family: 'Playfair Display', serif;
