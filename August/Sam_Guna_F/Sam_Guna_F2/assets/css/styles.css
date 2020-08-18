@@ -3049,7 +3049,7 @@ body.loaded .headingg.will-animate .heading-titling {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 782px;
+    max-width: 230px;
 }
 .heading-content__bigtitle{
     margin-top: calc(var(--vh, 1vh) * 20.2);
@@ -3386,6 +3386,9 @@ h2.global-subtitle{
   .promo__socials {
     margin-top: 4%;
   }
+  h1.global-title {
+    letter-spacing: initial !important;
+}
 }
 @media (min-width: 421px) and (max-width: 992px) {
   .promo-wrapper {
