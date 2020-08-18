@@ -3467,4 +3467,22 @@ h2.global-subtitle{
   }
 }
 
-/* END BANNER */
+@media(max-width: 600px){
+    .advantages-number-wrap .advantages-number__item:nth-of-type(1)::after {
+    right: 30px;
+}
+.advantages-number-wrap .advantages-number__item:nth-of-type(2), .advantages-number-wrap .advantages-number__item:nth-of-type(3), .advantages-number-wrap .advantages-number__item:nth-of-type(4) {
+    left: 0;
+    padding-left: 0px;
+}
+.advantages-number-wrap .advantages-number__item:nth-of-type(4) {
+    padding-left: 0px;
+}
+.advantages-number-wrap .advantages-number__item:nth-of-type(3)::after {
+    right: 30px;
+}
+
+.advantages-number-wrap .advantages-number__item:nth-of-type(1) {
+    right: 0px;
+}
+}
