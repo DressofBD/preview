@@ -51,17 +51,24 @@
         padding: 0 45px;
         line-height: 45px;
       }
-      .logo {
+      section.middle .logo {
         margin: 10px auto 20px auto;
       }
-      .logobtm {
+      section.middle .logobtm {
         margin-bottom: -10px;
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        width: 550px;
+        margin-left: -275px;
       }
       @media(max-width: 650px){
         section.middle{
           padding: 20px;
         }
-        .logo {
+        section.middle .logo {
           margin: 30px auto 20px auto;
         }
         section.middle p {
@@ -76,6 +83,8 @@
           bottom: 0;
           left: 0;
           right: 0;
+          margin-left: 0;
+          width: 100%;
         }
       }
     </style>
