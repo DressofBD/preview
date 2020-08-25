@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="assets/img/icon.png">
+  </head>
+  <body>
+    <section class="news-ticker">
+      <div id="news-ticker2" class="ticker-btn">
+        <img src="assets/brand1.png" alt="">
+        <img src="assets/brand2.png" alt="">
+        <img src="assets/brand3.png" alt="">
+      </div>
+    </section>
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <script src="assets/eocjs-newsticker.js"></script>
+    <style type="text/css">
+      body{
+        padding: 0;
+        margin: 0;
+      }
+      .eocjs-newsticker {
+        padding: 20px 0;
+        background-color: #e3e3e3;
+      }
+      .news-ticker img {
+        margin: 0 3px;
+      }
+      .eocjs-newsticker .eocjs-newsticker-container {
+        position: relative;
+        height: 70px;
+        overflow: hidden;
+      }
+
+      .eocjs-newsticker .eocjs-newsticker-one,
+      .eocjs-newsticker .eocjs-newsticker-two {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 70px;
+        line-height: 20px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+
+      .eocjs-newsticker-loader {
+        position: absolute;
+        left: calc(50% - 10px);
+        width: 16px;
+        height: 16px;
+        display: block;
+        border: 2px solid #555555;
+        border-top: 2px solid transparent;
+        border-radius: 50%;
+        animation: eocjs-newsticker-spin 1s linear infinite;
+      }
+
+      @keyframes eocjs-newsticker-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+    <script type="text/javascript">
+      $("#news-ticker2").eocjsNewsticker({
+        divider: "&nbsp; ",
+        interval: 30,    
+        speed: 35,
+        timeout: 0.5
+      });
+    </script>
+  </body>
+</html>
+
