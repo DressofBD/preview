@@ -12,10 +12,10 @@
   </head>
   <body>
     <section class="middle">
-      <p>Website<br> under construction.</p>
-      <p class="clred">Soon,<br> immigrating to Canada will be easier.</p>
-      <img src="assets/images/logo.png" class="logo" alt="logo">
-      <img src="assets/images/logobtm.jpg" class="logobtm" alt="flag hands">
+      <div><p>Website<br> under construction.</p>
+      <p class="clred">Soon,<br> immigrating to Canada will be easier.</p></div>
+      <div><img src="assets/images/logo.png" class="logo" alt="logo"></div>
+      <div><img src="assets/images/logobtm.jpg" class="logobtm" alt="flag hands"></div>
     </section>
 
     <style type="text/css">
@@ -41,6 +41,11 @@
         max-width: 650px;
         margin: 0 auto;
         padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100vh;
+        min-height: 100vh;
       }
       section.middle .clred{
         color: #c60738;
@@ -57,16 +62,11 @@
       section.middle .logobtm {
         margin-bottom: -10px;
         max-width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        right: 0;
-        width: 550px;
-        margin-left: -275px;
       }
       @media(max-width: 650px){
         section.middle{
           padding: 20px;
+          padding-bottom: 0;
         }
         section.middle .logo {
           margin: 30px auto 20px auto;
@@ -76,15 +76,6 @@
           margin: 25px auto;
           padding: 0 15px;
           line-height: 28px;
-        }
-        section.middle .logobtm {
-          max-width: 100%;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin-left: 0;
-          width: 100%;
         }
       }
     </style>
