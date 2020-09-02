@@ -1,0 +1,228 @@
+img.wp-smiley, img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+.recentcomments a {
+	display: inline !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.small-text-center.header-info {
+	float: left;
+}
+.vehicle-info {
+	border: medium none;
+	color: #333333;
+	display: inline;
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	height: 40px;
+	padding-left: 5px;
+	position: relative;
+	text-align: center;
+}
+.vehicle-info-users {
+	margin-right: 8px;
+	position: relative;
+	top: 5px;
+	vertical-align: inherit;
+}
+.vehicle-info-h-line {
+	margin-right: 8px;
+	position: relative;
+	top: 10px;
+	vertical-align: inherit;
+}
+.vehicle-info-case {
+	margin-right: 8px;
+	position: relative;
+	top: 2px;
+	vertical-align: inherit;
+}
+body.home .header, body.page .header , body.blog .header , body.single .header {
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+}
+body.home .header:before, body.page .header:before , body.blog .header:before , body.single .header:before {
+	background-image: linear-gradient(180deg, #333268, transparent);
+	content: " ";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+body.home .callouts-slim, body.page .callouts-slim , body.blog .callouts-slim , body.single .callouts-slim {
+	padding: 40px 0;
+}
+body.home .hp-section.callouts-slim .callout-title {
+	font-size: 20px;
+	margin: 0;
+}
+body.home .hp-section.hp-row-1 .callout-text {
+	font-size: 13px;
+	padding: 0;
+	margin: 0.5rem 0 0;
+	line-height: 1.5;
+}
+body.home .hp-section.airport-section-1 {
+	padding: 40px 0 20px 0;
+}
+.airport-section-1 a:not(.button) {
+	color: #00b290;
+}
+body.home .hp-section.theme-secondary {
+	background: #333268;
+	color: #fff;
+}
+body.home .hp-section.theme-secondary h1, body.home .hp-section.theme-secondary h2, body.home .hp-section.theme-secondary h3, body.home .hp-section.theme-secondary h4, body.home .hp-section.theme-secondary p, body.home .hp-section.theme-secondary li {
+	color: #fff;
+}
+body.home .hp-section.about-airport {
+	padding: 0;
+}
+body.home .hp-section.about-airport img {
+	margin: 0;
+}
+body.home .hp-section.about-airport .about-text {
+	padding: 40px 40px 0 40px;
+}
+.list-group {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.custom-list-grup li.list-group-item {
+	border: none !important;
+}
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: .75rem 1.25rem;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #efefff;
+}
+.list-group .title {
+	padding: 15px;
+	text-align: center;
+	background: #333268;
+	border-color: #333268;
+	color: #fff;
+}
+.media:first-child {
+	margin-top: 0;
+}
+.media, .media-body {
+	overflow: hidden;
+	zoom: 1;
+}
+.media {
+	margin-top: 15px;
+}
+.media-left {
+	padding-right: 10px;
+}
+.media-body, .media-left, .media-right {
+	display: table-cell;
+	vertical-align: top;
+}
+.list-group .price {
+	width: 2.2em;
+	font-size: 40px;
+	color: #df5e7d;
+}
+.media-object {
+	display: block;
+}
+.list-group .infos h3 {
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.list-group .infos em {
+	display: block;
+	margin-bottom: 10px;
+	color: #999;
+	font-size: 13px;
+}
+.container-btn-after-list {
+	background-repeat: no-repeat;
+	background-position: 0;
+	background-image: url('<?php bloginfo('template_directory'); ?>/images/arrow.png');
+	padding-left: 88px;
+	padding-right: 88px;
+}
+.container-btn-after-list {
+	width: 100%;
+	min-height: 85px;
+	padding-top: 32px;
+}
+p:empty {
+	display: none;
+}
+#airports-list {
+	padding-bottom: 40px;
+}
+body.home .hp-section.airport-list ul li {
+	margin-bottom: 0.25rem;
+}
+.page-container {
+	margin-top: 20px;
+}
+.tp-num {
+	color: #fff;
+	margin-right: 15px;
+}
+.ust-640 {
+	display: none;
+}
+
+@media (max-width:414px) {
+.text-center.ustheader {
+	font-size: 25px !important;
+}
+.btn-blue-booker {
+	font-size: 11px !important;
+}
+}
+
+@media (max-width:375px) {
+.ust-640 {
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+}
+
+@media (max-width:640px) {
+.ust-1200 {
+	display: none !important;
+}
+.ust-640 {
+	display: inline-block;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+}
+
+@media (max-width:930px) and (min-width:770px) {
+.nav-main ul.menu li {
+	padding: 0 5px !important;
+}
+}
+body.blog .entry-title, body.single .entry-title{
+    font-size: 28px !important;
+}
+.phonenumber a {
+    color: #000 !important;
+    font-weight: normal !important;
+}
