@@ -75,7 +75,7 @@ span#hamburger {
 	bottom: 0;
 	left: 0;
 }
-#page .header a {
+#page .header span a {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -196,6 +196,95 @@ nav[aria-hidden="true"] .mm-navbar_sticky, nav[aria-hidden="true"] .mm-navbars_t
 .mm-menu_selected-hover .mm-listitem__btn:hover, .mm-menu_selected-hover .mm-listitem__text:hover {
 	background: #f1f9ff;
 }
+
+
+
+
+
+
+
+.header-right {
+	margin-left: auto;
+	position: absolute;
+	top: 0;
+	right: 100px;
+}
+.header-right ul{
+	padding: 0;
+	margin: 0;
+}
+.header-right li{
+	display: inline-block;
+	margin: 0 8px;
+	position: relative;
+}
+.header-right li::before {
+	content: "";
+	position: absolute;
+	height: 94%;
+	border-right: 1px solid #ccc;
+	left: 43px;
+	top: 2px;
+}
+.header-right li:last-child::before {
+	display: none;
+}
+.header-right li a {
+	font-size: 18px;
+	color: #3e3e3e;
+	padding: 0px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.header-right li a:before, .header-right li a:after{
+	display: none;
+}
+.hdr-frm {
+	position: absolute;
+	top: -5px;
+	right: 54px;
+}
+.hdr-frm input {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	padding: 5px 10px 5px 32px;
+}
+.hdr-submit {
+	position: absolute;
+	background: transparent;
+	border: 0;
+	color: #424242;
+	font-size: 18px;
+	top: 8px;
+	cursor: pointer;
+}
+@media(max-width: 767px){
+	.header-right {
+	right: 10px;
+}
+	.hdr-frm input {
+	width: 85px;
+}
+.hdr-frm {
+	right: 42px;
+}
+}
+
+
+
+
+
+
+
+
 
 
 
