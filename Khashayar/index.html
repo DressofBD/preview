@@ -19,6 +19,30 @@
                       <b></b>
                   </a>
               </span>
+              <div class="header-right">
+                <ul>
+                  <li>
+                    <a href="#!" onclick="myFunction()"><i class="fa fa-search"></i></a>
+                    <form class="hdr-frm" id="hdr-frm">
+                      <button type="submit" class="hdr-submit"><i class="fa fa-search"></i></button>
+                      <input type="text" name="header-search" placeholder="Search Part">
+                    </form> 
+                  </li>
+                  <li><a href="#!"><i class="fa fa-info"></i></a></li>
+                  <li><a href="#!"><i class="fa fa-comment"></i></a></li>
+                </ul>
+                <script>
+                  function myFunction() {
+                     var element = document.getElementById("hdr-frm");
+                     element.classList.toggle("hdr-frm-style");
+                  }
+                </script>
+                <style type="text/css">
+                  .hdr-frm-style{
+                    display: none;
+                  }
+                </style>
+              </div>
           </div>
           <div class="content" style="padding: 150px 50px 50px 50px;">
               <p>
