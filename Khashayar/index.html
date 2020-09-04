@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="www.frebsite.nl" />
+    <meta
+      name="viewport"
+      content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no"
+      />
+    <title>mmenu.js demo</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="page">
+        <div class="header">
+            <span id="hamburger" class="Sticky">
+                <a href="#menu" class="mburger mburger--collapse">
+                    <b></b>
+                    <b></b>
+                    <b></b>
+                </a>
+            </span>
+        </div>
+        <div class="content" style="padding: 150px 50px 50px 50px;">
+            <p>
+              <!-- Start writing codes from here -->
+              <strong>Main body content goes to here.</strong><br />
+               Just continue writing codes from here.
+            </p>
+        </div>
+    </div>
+    <nav id="menu">
+      <ul class="listview-icons">
+        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#!"><i class="fa fa-search"></i>Advanced Search</a></li>
+        <li class="Divider">Primary Options</li>
+        <li><a href="#!"><i class="fa fa-lightbulb-o"></i>Parts</a></li>
+        <li>
+          <span><i class="fa fa-columns "></i>Catalog</span>
+          <ul>
+            <li><a href="#!">Parts Terminologies</a></li>
+            <li><a href="#!">Product Lines</a></li>
+            <li><a href="#!">Trading Partners</a></li>
+            <li><a href="#!">Manage Catalog</a></li>
+            <li>
+              <span>Catalog Translation</span>
+              <div>
+                <ul>
+                  <li><a href="#!">Catalog Translation 1</a></li>
+                  <li><a href="#!">Catalog Translation 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <LI><a href="#!">Create Catalog</a></LI>
+            <LI><a href="#!">Manage Catalog Labels</a></LI>
+            <LI><a href="#!">VMRS Not Used in Catalog</a></LI>
+            <LI><a href="#!">Manage Publishing</a></LI>
+            <li>
+              <span>Hierarchy</span>
+              <div>
+                <ul>
+                  <li><a href="#!">Hierarchy 1</a></li>
+                  <li><a href="#!">Hierarchy 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>Pricing</span>
+              <div>
+                <ul>
+                  <li><a href="#!">Pricing 1</a></li>
+                  <li><a href="#!">Pricing 2</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#!"><i class="fa fa-file-o"></i>Digital Assets</a></li>
+        <li>
+          <span><i class="fa fa-exchange"></i>Data Exchange</span>
+          <div>
+            <p>Here are some demo texts. Lorem ipsum dolor set amit</p>
+            <ul>
+              <li>
+                <span>Basic off-canvas menu</span>
+                <div>
+                  <p>This will guide you through the first steps of creating an app look-alike sliding menu for your website and webapp.</p>
+                  <ul>
+                    <li><a href="#!">Getting started</a></li>
+                    <li><a href="#!">Recap</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#!">Advanced: Contact list</a></li>
+              <li><a href="#!">Advanced: Thumbnail grid</a></li>
+              <li><a href="#!">Customized colors</a></li>
+              <li><a href="#!">Dynamic content</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span><i class="fa fa-truck"></i>Vehicles & Applications</span>
+          <div>
+            <p>Here are some demo texts. Lorem ipsum dolor set amit</p>
+            <ul>
+              <li><a href="#!">Introduction</a></li>
+              <li><a href="#!">Download &amp; License information</a></li>
+              <li><a href="#!">Changelog</a></li>
+              <li><a href="#!">Readme</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span><i class="fa fa-print"></i>Reports</span>
+          <div>
+            <p>Here are some demo texts. Lorem ipsum dolor set amit</p>
+            <ul>
+              <li><a href="#!">Introduction &amp; Download</a></li>
+              <li><a href="#!">Documentation</a></li>
+              <li><a href="#!">Tutorial</a></li>
+              <li><a href="#!">Changelog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span><i class="fa fa-square-o"></i>Advanced</span>
+          <div>
+            <ul>
+              <li><a href="#!">Introduction &amp; Download</a></li>
+              <li><a href="#!">Documentation</a></li>
+              <li><a href="#!">Tutorial CSS</a></li>
+              <li><a href="#!">Tutorial webcomponent</a></li>
+              <li><a href="#!">Changelog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span><i class="fa fa-th-list"></i>Preferences</span>
+          <div>
+            <p>Here are some demo texts. Lorem ipsum dolor set amit.</p>
+            <ul>
+              <li><a href="#!">Introduction &amp; Download</a></li>
+              <li><a href="#!">Documentation</a></li>
+              <li><a href="#!">Tutorial</a></li>
+              <!-- 
+                <li><a href="/mhead/changelog.html">Changelog</a></li> -->
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- mmenu scripts -->
+    <script src="assets/js/mmenu.polyfills.js"></script>
+    <script src="assets/js/mmenu.js"></script>
+    
+    <script>
+            new Mmenu(
+                document.querySelector('#menu'),
+                {
+                    extensions: { all: ["theme-white", "pagedim-black"], "(max-width: 767px)": ["fx-menu-slide"] },
+                            counters: !0,
+                            iconPanels: { add: !0, hideDivider: !0, hideNavbar: !0, visible: "first" },
+                            navbar: { title: "Menu" },
+                            navbars: [{ position: "top", content: ["searchfield"] }, { position: "top" }],
+                            searchfield: {
+                                panel: {
+                                    add: !0,
+                                    splash:
+                                        '<p>What are you looking for?<br />Type the menu name you are looking for.</p>',
+                                },
+                            },
+                            setSelected: { hover: !0, parent: !0 },
+                            sidebar: { collapsed: { use: 768, hideNavbar: !0, hideDivider: !0 }, expanded: { use: 1440, initial: "remember" } },
+                },
+            );
+        </script>
+  </body>
+</html>
+
