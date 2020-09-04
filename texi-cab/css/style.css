@@ -4691,6 +4691,7 @@ div.wpcf7-response-output {
     text-decoration: none;
     background: none;
     padding-top: 6px;
+    padding-bottom: 6px;
   }
   #nav-mob .navigation-mob ul li a:hover {
     color: #4aa65d;
