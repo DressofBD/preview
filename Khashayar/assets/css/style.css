@@ -261,7 +261,7 @@ nav[aria-hidden="true"] .mm-navbar_sticky, nav[aria-hidden="true"] .mm-navbars_t
 	position: absolute;
 	background: transparent;
 	border: 0;
-	color: #424242;
+	color: #ccc;
 	font-size: 18px;
 	top: 10px;
 	cursor: pointer;
