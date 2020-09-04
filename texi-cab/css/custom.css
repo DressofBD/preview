@@ -226,3 +226,45 @@ body.blog .entry-title, body.single .entry-title{
     color: #000 !important;
     font-weight: normal !important;
 }
+
+
+
+
+
+
+.panel-default > .panel-heading {
+	color: #333;
+	background-color: #f5f5f5;
+	border-color: #ddd;
+	padding: 0;
+}
+.panel-heading a{
+	display: block;
+	padding: 20px;
+	background-color: #fff;
+	color: #777;
+}
+.panel-heading a[aria-expanded="true"]{
+	background-color: #3da254;
+	color: #fff;
+}
+.panel-collapse {
+	border: 1px solid #3da254;
+}
+.collapse.in {
+	border: 1px solid #3da254;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
