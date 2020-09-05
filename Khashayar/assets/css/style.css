@@ -257,6 +257,9 @@ nav[aria-hidden="true"] .mm-navbar_sticky, nav[aria-hidden="true"] .mm-navbars_t
 	font-size: 16px;
 	padding: 5px 10px 5px 32px;
 }
+.hdr-frm input:focus{
+	border: 1px solid #0083FF;
+} 
 .hdr-submit {
 	position: absolute;
 	background: transparent;
