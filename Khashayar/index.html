@@ -1,205 +1,407 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8" />
-      <meta name="author" content="www.frebsite.nl" />
-      <meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
-      <title>Home Page</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link type="text/css" rel="stylesheet" href="assets/css/mmenu.css" />
-      <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-      <div id="page">
-          <div class="header">
-              <span id="hamburger" class="Sticky">
-                  <a href="#menu" class="mburger mburger--collapse">
-                      <b></b>
-                      <b></b>
-                      <b></b>
-                  </a>
-              </span>
-              <div class="header-right">
-                <ul>
-                  <li>
-                    <a href="#!" onclick="myFunction()"><i class="fa fa-search"></i></a>
-                    <form class="hdr-frm" id="hdr-frm">
-                      <button type="submit" class="hdr-submit"><i class="fa fa-search"></i></button>
-                      <input type="text" name="header-search" placeholder="Search Part">
-                    </form> 
-                  </li>
-                  <li><a href="#!"><i class="fa fa-info"></i></a></li>
-                  <li><a href="#!"><i class="fa fa-comment"></i></a></li>
-                </ul>
-                <script>
-                  function myFunction() {
-                     var element = document.getElementById("hdr-frm");
-                     element.classList.toggle("hdr-frm-style");
-                  }
-                </script>
-                <style type="text/css">
-                  .hdr-frm-style{
-                    display: none;
-                  }
-                </style>
-              </div>
-          </div>
-          <div class="content" style="padding: 150px 50px 50px 50px;">
-              <p>
-                  <!-- Start writing codes from here -->
-                  <strong>Main body content goes to here.</strong><br />
-                  Just continue writing codes from here.
-              </p>
-          </div>
-      </div>
-      <nav id="menu">
-          <ul class="listview-icons">
-              <li>
-                  <a href="index.html"><i class="fa fa-home"></i>Home</a>
-              </li>
-              <li>
-                  <a href="#!"><i class="fa fa-search"></i>Advanced Search</a>
-              </li>
-              <li class="Divider">Primary Options</li>
-              <li>
-                  <a href="#!"><i class="fa fa-lightbulb-o"></i>Parts</a>
-              </li>
-              <li>
-                  <span><i class="fa fa-columns"></i>Catalog</span>
-                  <ul>
-                      <li><a href="#!">Parts Terminologies</a></li>
-                      <li><a href="#!">Product Lines</a></li>
-                      <li><a href="#!">Trading Partners</a></li>
-                      <li><a href="#!">Manage Catalog</a></li>
-                      <li>
-                          <span>Catalog Translation</span>
-                          <div>
-                              <ul>
-                                  <li><a href="#!">Catalog Translation 1</a></li>
-                                  <li><a href="#!">Catalog Translation 2</a></li>
-                              </ul>
-                          </div>
-                      </li>
-                      <li><a href="#!">Create Catalog</a></li>
-                      <li><a href="#!">Manage Catalog Labels</a></li>
-                      <li><a href="#!">VMRS Not Used in Catalog</a></li>
-                      <li><a href="#!">Manage Publishing</a></li>
-                      <li>
-                          <span>Hierarchy</span>
-                          <div>
-                              <ul>
-                                  <li><a href="#!">Hierarchy 1</a></li>
-                                  <li><a href="#!">Hierarchy 2</a></li>
-                              </ul>
-                          </div>
-                      </li>
-                      <li>
-                          <span>Pricing</span>
-                          <div>
-                              <ul>
-                                  <li><a href="#!">Pricing 1</a></li>
-                                  <li><a href="#!">Pricing 2</a></li>
-                              </ul>
-                          </div>
-                      </li>
-                  </ul>
-              </li>
-              <li>
-                  <a href="#!"><i class="fa fa-file-o"></i>Digital Assets</a>
-              </li>
-              <li>
-                  <span><i class="fa fa-exchange"></i>Data Exchange</span>
-                  <div>
-                      <p>Here are some demo texts. Lorem ipsum dolor set amit</p>
-                      <ul>
-                          <li>
-                              <span>Basic off-canvas menu</span>
-                              <div>
-                                  <p>This will guide you through the first steps of creating an app look-alike sliding menu for your website and webapp.</p>
-                                  <ul>
-                                      <li><a href="#!">Getting started</a></li>
-                                      <li><a href="#!">Recap</a></li>
-                                  </ul>
-                              </div>
-                          </li>
-                          <li><a href="#!">Advanced: Contact list</a></li>
-                          <li><a href="#!">Advanced: Thumbnail grid</a></li>
-                          <li><a href="#!">Customized colors</a></li>
-                          <li><a href="#!">Dynamic content</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li>
-                  <span><i class="fa fa-truck"></i>Vehicles & Applications</span>
-                  <div>
-                      <p>Here are some demo texts. Lorem ipsum dolor set amit</p>
-                      <ul>
-                          <li><a href="#!">Introduction</a></li>
-                          <li><a href="#!">Download &amp; License information</a></li>
-                          <li><a href="#!">Changelog</a></li>
-                          <li><a href="#!">Readme</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li>
-                  <span><i class="fa fa-print"></i>Reports</span>
-                  <div>
-                      <p>Here are some demo texts. Lorem ipsum dolor set amit</p>
-                      <ul>
-                          <li><a href="#!">Introduction &amp; Download</a></li>
-                          <li><a href="#!">Documentation</a></li>
-                          <li><a href="#!">Tutorial</a></li>
-                          <li><a href="#!">Changelog</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li>
-                  <span><i class="fa fa-square-o"></i>Advanced</span>
-                  <div>
-                      <ul>
-                          <li><a href="#!">Introduction &amp; Download</a></li>
-                          <li><a href="#!">Documentation</a></li>
-                          <li><a href="#!">Tutorial CSS</a></li>
-                          <li><a href="#!">Tutorial webcomponent</a></li>
-                          <li><a href="#!">Changelog</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li>
-                  <span><i class="fa fa-th-list"></i>Preferences</span>
-                  <div>
-                      <p>Here are some demo texts. Lorem ipsum dolor set amit.</p>
-                      <ul>
-                          <li><a href="#!">Introduction &amp; Download</a></li>
-                          <li><a href="#!">Documentation</a></li>
-                          <li><a href="#!">Tutorial</a></li>
-                          <!-- 
-              <li><a href="/mhead/changelog.html">Changelog</a></li> -->
-                      </ul>
-                  </div>
-              </li>
+    <div id="page">
+      <div class="header">
+        <span id="hamburger" class="Sticky">
+        <a href="#menu" class="mburger mburger--collapse">
+        <b></b>
+        <b></b>
+        <b></b>
+        </a>
+        </span>
+        <div class="header-right">
+          <ul>
+            <li>
+              <a href="#!" onclick="myFunction()"><i class="fa fa-search"></i></a>
+              <form class="hdr-frm" id="hdr-frm">
+                <button type="submit" class="hdr-submit"><i class="fa fa-search"></i></button>
+                <input type="text" name="header-search" placeholder="Search Part">
+              </form>
+            </li>
+            <li><a href="#!"><i class="fa fa-info"></i></a></li>
+            <li><a href="#!"><i class="fa fa-comment"></i></a></li>
           </ul>
-      </nav>
-      <!-- mmenu scripts -->
-      <script src="assets/js/mmenu.polyfills.js"></script>
-      <script src="assets/js/mmenu.js"></script>
-
-      <script>
-          new Mmenu(document.querySelector("#menu"), {
-              extensions: { all: ["theme-white", "pagedim-black"], "(max-width: 767px)": ["fx-menu-slide"] },
-              counters: !0,
-              iconPanels: { add: !0, hideDivider: !0, hideNavbar: !0, visible: "first" },
-              navbar: { title: "Menu" },
-              navbars: [{ position: "top", content: ["searchfield"] }, { position: "top" }],
-              searchfield: {
-                  panel: {
-                      add: !0,
-                      splash: "<p>What are you looking for?<br />Type the menu name you are looking for.</p>",
-                  },
+          <script>
+            function myFunction() {
+               var element = document.getElementById("hdr-frm");
+               element.classList.toggle("hdr-frm-style");
+            }
+          </script>
+          <style type="text/css">
+            .hdr-frm-style{
+            display: none;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="content" style="padding: 30px 70px 30px 25px;">
+        <p>
+          <!-- Start writing codes from here -->
+          <strong>Main body content goes to here.</strong><br />
+          Just continue writing codes from here.
+        </p>
+      </div>
+    </div>
+    <nav id="menu">
+      <ul class="listview-icons">
+        <li>
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#!"><i class="fa fa-search"></i>Advanced Search</a>
+        </li>
+        <li class="Divider">Primary Options</li>
+        <li>
+          <span><i class="fa fa-lightbulb-o"></i>Parts</span>
+          <ul>
+            <li><a href="#!">Finished Goods</a></li>
+            <li><a href="#!">Bulk Parts</a></li>
+            <li><a href="#!">Competitor Parts</a></li>
+            <li><a href="#!">OE Parts</a></li>
+            <li><a href="#!">Interchange Search</a></li>
+            <li>
+              <span>Bulk Assign / Import</span>
+              <ul>
+                <li><a href="#!">Bulk Assign Markets</a></li>
+                <li><a href="#!">Bulk Import Markets</a></li>
+                <li><a href="#!">Bulk Import Attribute Values</a></li>
+                <li><a href="#!">Bulk Assign Part Attribute Values</a></li>
+                <li><a href="#!">Bulk Import Velocity Code</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Manage Related Parts</a></li>
+            <li>
+              <span>Manage Interchanges</span>
+              <ul>
+                <li><a href="#!">Manage Interchange File Rules</a></li>
+                <li><a href="#!">Bulk Import Interchanges</a></li>
+                <li><a href="#!">Supersession Interchanges Review</a></li>
+                <li><a href="#!">Competitor Parts w/o Interchange</a></li>
+                <li><a href="#!">Duplicate Interchange Report</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Manage Market Copy</span>
+              <ul>
+                <li><a href="#!">Manage Market Copy</a></li>
+                <li><a href="#!">Manage Market Copy Types</a></li>
+                <li><a href="#!">Bulk Import Market Copy</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>PAdb</span>
+              <ul>
+                <li><a href="#!">Attribute Report</a></li>
+                <li><a href="#!">Attribute Report History</a></li>
+                <li><a href="#!">Export All Attributes</a></li>
+                <li><a href="#!">Manage Custom PADB Attributes</a></li>
+                <li><a href="#!">Matching Custom PADB Attributes Report</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-columns"></i>Catalog</span>
+          <ul>
+            <li><a href="#!">Parts Terminologies</a></li>
+            <li><a href="#!">Product Lines</a></li>
+            <li><a href="#!">Trading Partners</a></li>
+            <li><a href="#!">Manage Catalog</a></li>
+            <li>
+              <span>Catalog Translation</span>
+              <ul>
+                <li><a href="#!">Catalog Hierarchy</a></li>
+                <li><a href="#!">VMRS Attribute Values</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Create New  Catalog</a></li>
+            <li><a href="#!">Manage Catalog Labels</a></li>
+            <li><a href="#!">VMRS Not Used in Catalog</a></li>
+            <li>
+              <span>Manage Publishing</span>
+              <ul>
+                <li><a href="#!">Manage Countries</a></li>
+                <li><a href="#!">Manage Sales Channels</a></li>
+                <li><a href="#!">Manage Global Digital Assets</a></li>
+                <li><a href="#!">Manage Global Attributes</a></li>
+                <li><a href="#!">Manage Part Attribute Order</a></li>
+                <li><a href="#!">Manage Attribute Types</a></li>
+                <li><a href="#!">Manage Digital Assets Sent</a></li>
+                <li><a href="#!">Manage Synonyms</a></li>
+                <li><a href="#!">Manage Publishing Specification</a></li>
+                <li><a href="#!">Publishing Schedule</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Hierarchy / VMRS</span>
+              <ul>
+                <li><a href="#!">Bulk Import Secondary VMRS</a></li>
+                <li><a href="#!">Manage VMRS Code Attributes</a></li>
+                <li><a href="#!">Manage VMRS Attributes</a></li>
+                <li><a href="#!">Import Custom Catalog Hierarchy</a></li>
+                <li>
+                  <span>VMRS Code Validation</span>
+                  <ul>
+                    <li><a href="#!">Invalid VMRS Codes</a></li>
+                    <li><a href="#!">Parts With Obsolete VMRS(CK33) Codes</a></li>
+                    <li><a href="#!">Parts With Obsolete Brand(CK34) Codes</a></li>
+                    <li><a href="#!">Superseding Parts Without VMRS</a></li>
+                  </ul>
+                </li>
+                <li><a href="#!">Manage Proposed VMRS Codes</a></li>
+                <li><a href="#!">Bulk Assign/Import</a></li>
+                <li><a href="#!">Bulk Import Attributes</a></li>
+                <li><a href="#!">Bulk Import Validated VMRS Codes</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Reports</span>
+              <ul>
+                <li><a href="#!">Faceted Descriptions With No Rules</a></li>
+                <li><a href="#!">Faceted Descriptions with Empty Attributes</a></li>
+                <li><a href="#!">VMRS Overlap Report</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-file-o"></i>Digital Assets</span>
+          <ul>
+            <li><a href="#!">Manage Digital Assets (Search Page)</a></li>
+            <li><a href="#!">Manage Unprocessed</a></li>
+            <li>
+              <span>Bulk Assign/Import</span>
+              <ul>
+                <li><a href="#!">Bulk Assign Parts</a></li>
+                <li><a href="#!">Mass Assign DA to Parts</a></li>
+                <li><a href="#!">Mass Assign DA to Catalog Node</a></li>
+                <li><a href="#!">Bulk Import Images</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Assign DA to Resource</a></li>
+            <li><a href="#!">Manage Digital Asset Rules</a></li>
+            <li><a href="#!">Manage New Supersessions</a></li>
+            <li><a href="#!">Export Digital Assets</a></li>
+            <li><a href="#!">Manage Watermark</a></li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-exchange"></i>Data Exchange</span>
+          <ul>
+            <li>
+              <span>Import</span>
+              <ul>
+                <li><a href="#!">ACES</a></li>
+                <li><a href="#!">Ad Hoc</a></li>
+                <li><a href="#!">PIES</a></li>
+                <li><a href="#!">Price Sheets</a></li>
+                <li><a href="#!">VIO</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Export</span>
+              <ul>
+                <li><a href="#!">ACES</a></li>
+                <li><a href="#!">Ad Hoc</a></li>
+                <li><a href="#!">PIES</a></li>
+                <li><a href="#!">Price Sheets</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-truck"></i>Vehicles & Applications</span>
+          <ul>
+            <li>
+              <span>Vehicles</span>
+              <ul>
+                <li><a href="#!">Manage Vehicles</a></li>
+                <li><a href="#!">Manage Vehicle Tables</a></li>
+                <li><a href="#!">Manage Vehicle Engines </a></li>
+                <li><a href="#!">Manage Vehicle Drive Trains</a></li>
+                <li><a href="#!">Manage Vehicle Body Styles</a></li>
+                <li><a href="#!">Manage Transmissions</a></li>
+                <li><a href="#!">Manage Qualifiers</a></li>
+                <li><a href="#!">Manage Positions</a></li>
+                <li><a href="#!">Bulk Import Applications</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>HD Vehicles</span>
+              <ul>
+                <li><a href="#!">Manage HD Vehicles</a></li>
+                <li><a href="#!">Manage HD Vehicle Tables</a></li>
+                <li><a href="#!">Manage HD Engines</a></li>
+                <li><a href="#!">Manage HD Drive Trains</a></li>
+                <li><a href="#!">Manage HD Transmissions</a></li>
+                <li><a href="#!">Manage HD Body Style</a></li>
+                <li><a href="#!">Manage HD Qualifiers</a></li>
+                <li><a href="#!">Manage HD Positions</a></li>
+                <li><a href="#!">Bulk Import HD Applications</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">VIN Lookup</a></li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-print"></i>Reports</span>
+          <ul>
+            <li>
+              <span>Audit Report</span>
+              <ul>
+                <li><a href="#!">Audit Part Report</a></li>
+                <li><a href="#!">Audit Report Tables</a></li>
+                <li><a href="#!">Audit Vehicle Position</a></li>
+                <li><a href="#!">Audit Vehicle Qualifier</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Workflow Report</span>
+              <ul>
+                <li><a href="#!">Processing</a></li>
+                <li><a href="#!">History</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">New / Changed Parts Report</a></li>
+            <li>
+              <span>Part</span>
+              <ul>
+                <li><a href="#!">Part VMRS Report</a></li>
+                <li><a href="#!">Part Attribute Report</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Catalog</span>
+              <ul>
+                <li><a href="#!">VMRS Catalog Part Missing Brand</a></li>
+                <li><a href="#!">VMRS Catalog Part Missing Image</a></li>
+                <li><a href="#!">VMRS Catalog Unapproved Node</a></li>
+                <li><a href="#!">VMRS-Based Catalog Unapproved Node</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Query Builder Report Schedule</a></li>
+            <li><a href="#!">Log Files</a></li>
+            <li><a href="#!">PIM Report Downloads</a></li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-square-o"></i>Advanced</span>
+          <ul>
+            <li>
+              <span>Administrator Menu</span>
+              <ul>
+                <li><a href="#!">User Accounts</a></li>
+                <li><a href="#!">Group Accounts</a></li>
+                <li><a href="#!">User / Group Access</a></li>
+                <li><a href="#!">Copy User Preferences</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Workflow</span>
+              <ul>
+                <li><a href="#!">Search Workflows</a></li>
+                <li><a href="#!">Workflow Triggers (Admin only)</a></li>
+                <li>
+                  <span>Tasks</span>
+                  <ul>
+                    <li><a href="#!">Create Tasks</a></li>
+                    <li><a href="#!">Attach Tasks to Workflows</a></li>
+                  </ul>
+                </li>
+                <li><a href="#!">Download Workflow Design Template</a></li>
+                <li><a href="#!">Manage Search Table</a></li>
+                <li><a href="#!">Manage Exchange Rate</a></li>
+                <li>
+                  <span>Industry Imports</span>
+                  <ul>
+                    <li><a href="#!">PCdb</a></li>
+                    <li><a href="#!">Qdb</a></li>
+                    <li><a href="#!">VCdb</a></li>
+                    <li>
+                      <span>PADB</span>
+                      <ul>
+                        <li><a href="#!">Import</a></li>
+                        <li><a href="#!">Import Report</a></li>
+                        <li><a href="#!">PAdb Changes</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#!">HDPAdb</a></li>
+                    <li><a href="#!">Brand Tables</a></li>
+                    <li><a href="#!">VMRS</a></li>
+                    <li><a href="#!">OE Research</a></li>
+                    <li><a href="#!">VIO</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Manage Brands</span>
+                  <ul>
+                    <li><a href="#!">Manage Brand Data</a></li>
+                    <li><a href="#!">Manage Brand X-Ref</a></li>
+                    <li><a href="#!">Manage Brand Rule</a></li>
+                    <li><a href="#!">Bulk Assign Brand</a></li>
+                    <li><a href="#!">Bulk Import Brand</a></li>
+                    <li><a href="#!">Bulk Import Brand Alias / Searchable</a></li>
+                    <li><a href="#!">Manage Brand URLs</a></li>
+                    <li><a href="#!">Manage Brand URL Labels</a></li>
+                    <li><a href="#!">Manage Brand Order</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Manage Product Type</span>
+                  <ul>
+                    <li><a href="#!">Manage Product Type</a></li>
+                    <li><a href="#!">Manage Product Type Rule</a></li>
+                    <li><a href="#!">Bulk Import Product Rule</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Manage Auditing</span>
+                  <ul>
+                    <li><a href="#!">Manage Audit Fields</a></li>
+                    <li><a href="#!">Manage Audit Tables</a></li>
+                  </ul>
+                </li>
+                <li><a href="#!">Manage Market Rule</a></li>
+                <li><a href="#!">Manage Publish Rule</a></li>
+                <li><a href="#!">Manage Languages</a></li>
+                <li><a href="#!">Manage LOVs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- mmenu scripts -->
+    <script src="assets/js/mmenu.polyfills.js"></script>
+    <script src="assets/js/mmenu.js"></script>
+    <script>
+      new Mmenu(document.querySelector("#menu"), {
+          extensions: { all: ["theme-white", "pagedim-black"], "(max-width: 767px)": ["fx-menu-slide"] },
+          counters: !0,
+          iconPanels: { add: !0, hideDivider: !0, hideNavbar: !0, visible: "first" },
+          navbar: { title: "Menu" },
+          navbars: [{ position: "top", content: ["searchfield"] }, { position: "top" }],
+          searchfield: {
+              panel: {
+                  add: !0,
+                  splash: "<p>What are you looking for?<br />Type the menu name you are looking for.</p>",
               },
-              setSelected: { hover: !0, parent: !0 },
-              sidebar: { collapsed: { use: 768, hideNavbar: !0, hideDivider: !0 }, expanded: { use: 1440, initial: "remember" } },
-          });
-      </script>
+          },
+          setSelected: { hover: !0, parent: !0 },
+          sidebar: { collapsed: { use: 768, hideNavbar: !0, hideDivider: !0 }, expanded: { use: 1440, initial: "remember" } },
+      });
+    </script>
   </body>
 </html>
+
