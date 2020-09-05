@@ -4493,7 +4493,9 @@ div.wpcf7-response-output {
     width: auto;
     margin-bottom: 20px;
   }
-
+  .alignleft {
+      margin-right: 0px;
+  }
   /********************* About us-page ************************/
   .post h2 {
     text-align: center;
