@@ -11,11 +11,11 @@
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="top-header">
+    <div class="mytop-header Fixed">
       
     </div>
     <div id="page">
-      <div class="header">
+      <div class="header Fixed">
         <span id="hamburger" class="Sticky">
         <a href="#menu" class="mburger mburger--collapse">
         <b></b>
@@ -52,7 +52,9 @@
         <p>
           <!-- Start writing codes from here -->
           <strong>Main body content goes to here.</strong><br />
-          Just continue writing codes from here.
+          Just continue writing codes from here. <br>
+          <p style="padding: 400px 0">body content</p>
+          <p style="padding: 400px 0">body content</p>
         </p>
       </div>
     </div>
@@ -397,7 +399,7 @@
           navbars: [{ position: "top", content: ["searchfield"] }, { position: "top" }],
           searchfield: {
               panel: {
-                  add: !0,
+                  add: '!0',
                   splash: "<p>What are you looking for?<br />Type the menu name you are looking for.</p>",
               },
           },
