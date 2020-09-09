@@ -1,0 +1,27 @@
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+  overflow-y:hidden;
+}
+
+section {
+	background: beige;
+	height: 300px;
+	margin: 0 auto;
+	z-index: 1;
+	position: relative;
+	top: 50%;
+}
+
+#particles-js {
+		background: #000; 
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+		height: 100%;
+		margin: 0 auto;
+		border-bottom: 2px solid grey;
+		box-shadow: 0 12px 6px -6px grey;
+		padding-bottom: 200px; 
+}
