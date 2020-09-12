@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* main_slider */
+
+#mslider .html_carousel {
+	padding:0px;
+}
+#mslider .html_carousel div.slide {
+	position: relative;
+	width:622px;
+	height:391px;
+	display: inline-block;
+}
+#mslider a.prev {
+	right: 26px;
+	background-image: url(images/main_slider_prev.png);
+	background-repeat: no-repeat;
+	width: 33px;
+	height: 35px;
+	display: none;
+	position: absolute;
+	top: 307px;
+	outline:none;
+}
+#mslider a.prev:hover {
+	outline:none;	
+}
+#mslider a.next {
+	right: -6px;
+	background-image: url(images/main_slider_next.png);
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 41px;
+	display: none;
+	position: absolute;
+	top: 301px;
+	outline:none;
+}
+#mslider a.next:hover {
+	outline:none;	
+}
+#mslider a.prev span, a.next span {
+	display: none;
+}
+
+/* car carousel */
+
+#slider-02 {
+	overflow:hidden;
+}
+
+#index-services .html_carousel {
+	padding:0px;
+	width:100%;
+	/*height:391px;*/
+}
+#index-services .html_carousel div.slide {
+	position: relative;
+	width:312px;
+	height:391px;
+	display: inline-block;
+	float:left;
+	padding:0 10px;
+}
+#index-services a.prev, #index-services a.next {
+	width: 49px;
+	height: 49px;
+	display: none;
+	position: absolute;
+	top: 166px;
+	outline:none;
+}
+#index-services a.prev {
+	left: -49px;
+	background-image: url(images/index-carusel_prev.png);
+	background-repeat: no-repeat;
+}
+#index-services a.prev:hover {
+	outline:none;	
+}
+#index-services a.next {
+	right: -49px;
+	background-image: url(images/index-carusel_next.png);
+	background-repeat: no-repeat;
+}
+#index-services a.next:hover {
+	outline:none;	
+}
+#index-services a.prev span, a.next span {
+	display: none;
+}
