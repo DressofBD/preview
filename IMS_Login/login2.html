@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>IMS - Insurance Management System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title text-left">
+						<img src="images/logo.svg">
+					</span>
+					<span class="login100-form-title text-left m-t-40 m-b-40">
+						Sign In
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Invalid email format">
+						<input class="input100 m-b-40" type="text" name="email" required>
+						<span class="floating-label">Your Email</span>
+						<span class="symbol-input100">
+							<img src="images/email-icon.svg"/>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-40" data-validate = "Password must contain at least 8 characters">
+						<input class="input100" id="pass_log_id" type="password" name="pass" id="pass_log_id" required>
+						<span class="floating-label">Password</span>
+						<span class="symbol-input100">
+							<img src="images/pwd-icon.svg"/>
+						</span>
+						<span onclick="show()" class="symbol-eye100"><img src="images/eye-off-outline.svg" id="pwd-eye"></span>
+
+					</div>
+
+					<div class="float-left remember-me m-b-40">
+						<label for="default-remember" class="m-b-0 default-remember">
+            			<input type="checkbox" id="default-remember" />&nbsp;&nbsp;Remember Me</label>
+					</div>
+					<div class="float-right reset-password m-b-40">
+						<label class="m-b-0">Reset Password</label>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn mr-2 sso-login">
+							Sign In with SSO
+						</button>
+						<button class="login100-form-btn ml-2 sign-login">
+							Sign In
+						</button>
+					</div>
+
+					
+					<div class="text-left p-t-40 copyright-text">
+						<p>By logging in you agree to Insurance Management System <a class="txt2" href="#">Terms of Service</a> and <a class="txt2" href="#">Privacy Policy</a>, and confirm that you are familiar with the <a class="txt2" href="#">Legal Information</a></p>
+						<p>Insurance Management System ver. 0.1 © Copyright 2020</p>
+						</div>
+				</form>
+				<div class="login100-pic">
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+         function show() {
+			  var a = document.getElementById("pass_log_id");
+			  var b = document.getElementById("pwd-eye");
+			  if (a.type == "password") {
+			    a.type = "text";
+			    b.src = "images/eye-outline.svg";
+			  } else {
+			    a.type = "password";
+			    b.src = "images/eye-off-outline.svg";
+			  }
+			}
+
+      </script>
+<style type="text/css">
+.container-login100 {
+	padding: 30px 15px;
+}
+.wrap-login100 {
+	width: 100%;
+	padding: 0px;
+	justify-content: center;
+}
+.login100-pic, .login100-form {
+	width: 50%;
+	max-width: 500px;
+}
+.login100-pic img {
+	width: 100%;
+	height: 100%;
+	padding: 0 30px;
+}
+@media(max-width: 992px){
+.login100-pic {
+	display: block; 
+}
+}
+@media(max-width: 550px){
+.login100-pic {
+	display: none; 
+}
+.login100-form{
+	width: 100%;
+}
+}
+</style>
+</body>
+</html>
