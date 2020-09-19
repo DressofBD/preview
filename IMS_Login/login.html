@@ -34,19 +34,19 @@
 					<span class="login100-form-title text-left">
 						<img src="images/logo.svg">
 					</span>
-					<span class="login100-form-title text-left m-t-40 m-b-40">
+					<span class="login100-form-title text-left ">
 						Sign In
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Invalid email format">
-						<input class="input100 m-b-40" type="text" name="email" required>
+						<input class="input100" type="text" name="email" required>
 						<span class="floating-label">Your Email</span>
 						<span class="symbol-input100">
 							<img src="images/email-icon.svg"/>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-40" data-validate = "Password must contain at least 8 characters">
+					<div class="wrap-input100 validate-input" data-validate = "Password must contain at least 8 characters">
 						<input class="input100" id="pass_log_id" type="password" name="pass" id="pass_log_id" required>
 						<span class="floating-label">Password</span>
 						<span class="symbol-input100">
@@ -56,11 +56,11 @@
 
 					</div>
 
-					<div class="float-left remember-me m-b-40">
+					<div class="float-left remember-me">
 						<label for="default-remember" class="m-b-0 default-remember">
             			<input type="checkbox" id="default-remember" />&nbsp;&nbsp;Remember Me</label>
 					</div>
-					<div class="float-right reset-password m-b-40">
+					<div class="float-right reset-password">
 						<label class="m-b-0">Reset Password</label>
 					</div>
 					
@@ -74,7 +74,7 @@
 					</div>
 
 					
-					<div class="text-left p-t-40 copyright-text">
+					<div class="text-left  copyright-text">
 						<p>By logging in you agree to Insurance Management System <a class="txt2" href="#">Terms of Service</a> and <a class="txt2" href="#">Privacy Policy</a>, and confirm that you are familiar with the <a class="txt2" href="#">Legal Information</a></p>
 						<p>Insurance Management System ver. 0.1 © Copyright 2020</p>
 						</div>
@@ -119,5 +119,42 @@
 			}
 
       </script>
+<style type="text/css">
+.container-login100 {
+	padding: 20px;
+}
+.login100-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.wrap-login100 {
+	width: 100%;
+	padding: 0px;
+	justify-content: center;
+}
+.login100-pic, .login100-form {
+	width: 50%;
+	max-width: 500px;
+}
+.login100-pic img {
+	width: 100%;
+	height:  100% !important;
+	padding: 0 30px;
+}
+.limiter, .container-login100, .wrap-login100, .login100-pic, .login100-pic img {
+	/*min-height: 100vh !important;*/
+	min-height: 100% !important;
+}
+@media(max-width: 992px){
+.login100-form {
+	min-height: 630px;
+}
+.login100-pic, .login100-form {
+	width: 100%;
+	max-width: auto;
+}
+}
+</style>
 </body>
 </html>
