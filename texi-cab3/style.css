@@ -4120,6 +4120,26 @@ input[type="date"] {
   font-weight: 100;
   padding: 5px;
 }
+.form-group4 {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.customsBtn {
+  float: left;
+  background: #04171a;
+  color: #fff;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 10px 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px !important;
+  border: 1px solid #5f97d0;
+  padding-right: 7px;
+}
 @media(max-width: 767px){
   .custom-reservation-form .form-group2 select {
   min-width: 80px;
