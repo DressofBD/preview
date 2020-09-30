@@ -299,6 +299,10 @@ header.sticky {
   width: 40%;
   float: left;
 }
+.form-half{
+  display: flex;
+  justify-content: space-between;
+}
 .middle-form .btn-submit {
   background-color: #292929;
   border-color: #000000;
@@ -721,6 +725,9 @@ header.sticky {
 }
 .form-group.half {
   width: 100%;
+}
+.form-half {
+  flex-direction: column;
 }
 header {
   position: relative;
