@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy BirthDay! | PRUDENTIAL </title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(img/FSAlbertPro-Bold.otf);
+}
+@font-face {
+  font-family: fsalbertpro-regular;
+  src: url(img/fsalbertpro-regular.ttf);
+}
+body {
+  font-family: 'FSAlbertPro-Bold';
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.p-g-card {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #F7E0DF;
+}
+.p-g-card img{
+  max-width: 100%;
+  height: auto;
+}
+.p-g-card .pabsolute{
+  position: absolute;
+}
+.p-g-card .prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.p-g-card .hbd {
+  top: 13%;
+  width: 70%;
+  height: auto;
+  left: 50%;
+  margin-left: -35%;
+  z-index: 3;
+}
+.p-g-card .hbd1 {
+  top: 18%;
+  left: 13%;
+  width: 38%;
+  animation: hbd1 2s ease-in-out infinite alternate;
+}
+.p-g-card .hbd2 {
+  top: 27%;
+  left: 7%;
+  width: 55%;
+}
+.p-g-card .fire {
+  top: 21%;
+  right: 5%;
+  width: 49%;
+  animation: fire 2s ease-in-out infinite alternate;
+}
+@keyframes fire {
+  0% { filter: brightness(1000%);}
+  50% { filter: brightness(50%);}
+  100% { filter: brightness(1000%);}
+}
+@keyframes hbd1 {
+  0% { filter: grayscale(50%); transform: rotate(0deg);}
+  50% { filter: grayscale(0%);}
+  100% { filter: grayscale(100%); transform: rotate(3deg);}
+}
+.p-g-card .text-box {
+  top: 49%;
+  display: block;
+  left: 10%;
+  width: 46%;
+}
+.p-g-card p {
+  font-size: 19px;
+  color: #CAC7C1;
+  font-style: normal;
+  font-family: FSAlbertPro-Bold;
+  text-align: left;
+  line-height: 25px;
+}
+.p-g-card .bg {
+  height: auto;
+  margin-bottom: -10px;
+}
+.p-g-card .bgm {
+  display: none;
+}
+.p-g-card .name-box {
+  top: 2%;
+  width: 100%;
+  z-index: 9;
+  left: 9%;
+  max-width: 55%;
+}
+.p-g-card .name-box h2{
+  margin: 20px 0;
+  color: #fff;
+  text-align: left;
+  font-size: 24px;
+}
+.p-g-card .sparkle {
+  bottom: 35%;
+  right: 5%;
+  width: 50%;
+}
+@media screen and (max-width:979px){
+.p-g-card {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+.p-g-card .hbd {
+  width: 84%;
+  top: 20%;
+  margin-left: -42%;
+}
+.p-g-card .name-box {
+  font-size: 14px;
+  top: 1%;
+}
+.p-g-card .name-box h2 {
+  font-size: 20px;
+}
+.p-g-card .text-box {
+  width: 55%;
+  text-align: center;
+  left: 50%;
+  margin-left: -39%;
+  top: 54%;
+}
+.p-g-card p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.p-g-card .fire {
+  top: 33%;
+  right: 6%;
+}
+.p-g-card .bg{
+  display: none;
+}
+.p-g-card .bgm {
+  height: 800px;
+  display: block;
+  width: 420px !important;
+}
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="p-g-card">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bgm.jpg" class=" bgm">
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <div class="pabsolute name-box">
+          <h2>Dear <$name$></h2>
+        </div>
+        <div class="pabsolute text-box">
+          <p>Life thus far has been great.<br>
+            Know that you are not alone and there
+            will always be someone there for you. </p>
+        </div>
+        <img src="img/hbd1.png" class="pabsolute hbd1">
+        <img src="img/hbd2.png" class="pabsolute hbd2">
+        <img src="img/sparkle.png" class="pabsolute sparkle">
+        <img src="img/fire2.png" class="pabsolute fire">
+      </section>
+   </body>
+</html>
+
