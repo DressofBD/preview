@@ -71,6 +71,7 @@ body {
   z-index: 0;
   text-align: left;
   padding: 20px;
+  z-index: 9;
 }
 .prud .top-text h2 {
   font-family: FSAlbertPro-Light;
@@ -106,14 +107,68 @@ body {
   margin-bottom: 30px;
 }
 .prud .mobile1 {
-  top: 18%;
-  left: 10%;
-  width: 48%;
+  top: 17%;
+  left: 7%;
+  width: 51%;
 }
 .prud .mobile2 {
-  top: 18%;
-  right: 11%;
+  top: 17%;
+  right: 10%;
   width: 31%;
+}
+.prud .glow1 {
+  top: 15%;
+  width: 4.5%;
+  left: 8.7%;
+  animation: glow1 2s ease-in-out infinite;
+}
+@keyframes glow1{
+  0%{transform: translateY(0); opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{transform: translateY(160px); opacity: 0;}
+}
+.prud .glow2 {
+  top: 15%;
+  width: 4.5%;
+  right: 8%;
+  animation: glow2 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+@keyframes glow2{
+  0%{transform: translateY(0); opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{transform: translateY(140%); opacity: 0;}
+}
+.prud .glow3 {
+  width: 20%;
+  top: 9%;
+  left: 24%;
+  z-index: 9;
+  animation: glow3 2s ease-in-out infinite;
+}
+@keyframes glow3{
+  0%{transform: translateX(0); opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{transform: translateX(160%); opacity: 0;}
+}
+.prud .glow4 {
+  width: 24%;
+  top: -6%;
+  left: 15%;
+  z-index: 9;
+  animation: glow4 2s ease-in-out infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+@keyframes glow4{
+  0%{transform: translateX(0); opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{transform: translateX(185%); opacity: 0;}
 }
 .prud .opportunities {
   top: 52%;
@@ -128,7 +183,7 @@ body {
   width: 46%;
   left: 50%;
   margin-left: -23%;
-  top: 10%;
+  top: 11%;
 }
 .prud .opport-desc {
   display: flex;
@@ -267,8 +322,12 @@ body {
 .prud .bgm {
   display: none;
 }
-#fallingBall {
+.prud #fallingBall {
   height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 @media screen and (max-width:979px){
 .prud {
@@ -388,9 +447,19 @@ body {
   max-width: 120px;
   margin-bottom: 20px;
 }
-
-
-
+.prud .glow1 {
+  top: 3%;
+  z-index: 0;
+}
+.prud .glow2 {
+  top: 10%;
+}
+.prud .glow3 {
+  top: 5%;
+}
+.prud .glow4 {
+  top: -3%;
+}
 }
 </style>
 </head>
@@ -412,9 +481,12 @@ body {
         </div>
         <img src="img/mobile1.png" class="pabsolute mobile1">
         <img src="img/mobile2.png" class="pabsolute mobile2">
+        <img src="img/glow1.png" class="pabsolute glow1">
+        <img src="img/glow1.png" class="pabsolute glow2">
         <div class="prelative opportunities">
           <h4>Opportunities at your fingertips</h4>
           <img src="img/tb-btm.png" class="pabsolute tb-btm">
+          <img src="img/glow2.png" class="pabsolute glow3">
           <div class="opport-desc">
             <ul>
               <li>
@@ -449,6 +521,7 @@ body {
         <div class="prelative footer">
           <h3>Take the lead with <span>PulseLeads</span> now!</h3>
           <img src="img/tb-top.png" class="pabsolute tb-top">
+          <img src="img/glow2.png" class="pabsolute glow4">
           <div class="f-step">
             <h4>3 Must-Do Steps to unlock <span>PulseLeads</span></h4>
             <ul>
@@ -488,7 +561,7 @@ body {
 (function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
-  NUM_CONFETTI = 120;
+  NUM_CONFETTI = 250;
 
   COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
 
@@ -503,8 +576,8 @@ body {
   window.h = 0;
 
   resizeWindow = function() {
-    window.w = canvas.width = window.innerWidth;
-    return window.h = canvas.height = window.innerHeight;
+    window.w = canvas.width = 1000;
+    return window.h = canvas.height = 1000;
   };
 
   window.addEventListener('resize', resizeWindow, false);
@@ -532,31 +605,31 @@ body {
 
   window.requestAnimationFrame = (function() {
     return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
-      return window.setTimeout(callback, 5000 / 60);
+      return window.setTimeout(callback, 1000 / 60);
     };
   })();
 
-  Confetti = (function() {
-    function Confetti() {
+  Confetti = class Confetti {
+    constructor() {
       this.style = COLORS[~~range(0, 5)];
-      this.rgb = "rgba(" + this.style[0] + "," + this.style[0] + "," + this.style[0];
-      this.r = ~~range(1, 3);
+      this.rgb = `rgba(${this.style[0]},${this.style[1]},${this.style[2]}`;
+      this.r = ~~range(2, 6);
       this.r2 = 2 * this.r;
       this.replace();
     }
 
-    Confetti.prototype.replace = function() {
+    replace() {
       this.opacity = 0;
       this.dop = 0.03 * range(1, 4);
       this.x = range(-this.r2, w - this.r2);
-      this.y = range(-30, h - this.r2);
+      this.y = range(-20, h - this.r2);
       this.xmax = w - this.r;
       this.ymax = h - this.r;
       this.vx = range(0, 2) + 8 * xpos - 5;
       return this.vy = 0.7 * this.r + range(-1, 1);
-    };
+    }
 
-    Confetti.prototype.draw = function() {
+    draw() {
       var ref;
       this.x += this.vx;
       this.y += this.vy;
@@ -571,17 +644,15 @@ body {
       if (!((0 < (ref = this.x) && ref < this.xmax))) {
         this.x = (this.x + this.xmax) % this.xmax;
       }
-      return drawCircle(~~this.x, ~~this.y, this.r, this.rgb + "," + this.opacity + ")");
-    };
+      return drawCircle(~~this.x, ~~this.y, this.r, `${this.rgb},${this.opacity})`);
+    }
 
-    return Confetti;
-
-  })();
+  };
 
   confetti = (function() {
     var j, ref, results;
     results = [];
-    for (i = j = 1, ref = NUM_CONFETTI; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+    for (i = j = 1, ref = NUM_CONFETTI; (1 <= ref ? j <= ref : j >= ref); i = 1 <= ref ? ++j : --j) {
       results.push(new Confetti);
     }
     return results;
@@ -602,6 +673,7 @@ body {
   step();
 
 }).call(this);
+
 </script>
    </body>
 </html>
