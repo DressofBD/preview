@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>PRUDENTIAL </title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(img/FSAlbertPro-Bold.otf);
+}
+@font-face {
+  font-family: FSAlbertPro-Regular;
+  src: url(img/FSAlbertPro-Regular.otf);
+}
+@font-face {
+  font-family: FSAlbertPro-Light;
+  src: url(img/FSAlbertPro-Light.otf);
+}
+body {
+  font-family: 'FSAlbertPro-Regular';
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.prud {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #010101;
+}
+.prud img{
+  max-width: 100%;
+  height: auto;
+}
+.prud .pabsolute{
+  position: absolute;
+}
+.prud .prelative{
+  position: relative;
+}
+.prud .prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.prud p {
+  font-size: 28px;
+  color: #68737A;
+  font-style: normal;
+  font-family: FSAlbertPro-Light;
+}
+.prud .top-text {
+  top: 0%;
+  background: #fff;
+  left: 4%;
+  width: 67%;
+  height: 271px;
+  z-index: 0;
+  text-align: left;
+  padding: 20px;
+}
+.prud .top-text h2 {
+  font-family: FSAlbertPro-Light;
+  font-size: 80px;
+  margin: 0;
+  color: #68737A;
+}
+.prud ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.prud ul li{
+  list-style: none;
+}
+.prud .top-text ul li{
+  list-style: none;
+}
+.prud .top-text ul li a {
+  color: #68737A;
+  font-family: FSAlbertPro-Bold;
+  font-size: 28px;
+  text-decoration: navajowhite;
+  border-right: 1px solid #EC1B2E;
+  padding-right: 18px;
+}
+.prud .top-text ul li:last-child a{
+  border:0;
+}
+.prud .top-text p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.prud .mobile1 {
+  top: 18%;
+  left: 10%;
+  width: 48%;
+}
+.prud .mobile2 {
+  top: 18%;
+  right: 11%;
+  width: 31%;
+}
+.prud .opportunities {
+  top: 52%;
+}
+.prud .opportunities h4 {
+  color: #fff;
+  font-size: 35px;
+  font-family: FSAlbertPro-Regular;
+  margin: 10px 0;
+}
+.prud .tb-btm {
+  width: 46%;
+  left: 50%;
+  margin-left: -23%;
+  top: 10%;
+}
+.prud .opport-desc {
+  display: flex;
+}
+.prud .opport-desc ul {
+  flex-wrap: wrap;
+  padding: 10px 60px;
+}
+.prud .opport-desc li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-around;
+}
+.prud .opport-desc li img {
+  max-width: 55px;
+  margin-right: 28px;
+}
+.prud .opport-desc li p {
+  color: #fff;
+  font-size: 25px;
+  font-family: FSAlbertPro-Bold;
+}
+
+
+
+
+
+
+
+.prud .footer h3, .prud .f-step h4{
+  font-family: FSAlbertPro-Bold;
+}
+.prud .footer h3 span, .prud .f-step h4 span{
+  font-family: FSAlbertPro-Light;
+}
+.prud .footer h3 {
+  color: #fff;
+  font-size: 40px;
+  z-index: 2;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.prud .tb-top {
+  top: -5%;
+  left: 50%;
+  margin-left: -35%;
+  width: 70%;
+  z-index: 1;
+}
+.prud .f-step h4 {
+  font-size: 35px;
+  color: #000;
+  z-index: 9;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.prud .f-step p {
+  font-family: FSAlbertPro-Regular;
+  color: #000;
+  font-size: 18px;
+}
+.prud .f-step p span{
+  color:  #EC1B2E;
+}
+.prud .f-step ul {
+  z-index: 9;
+  position: relative;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+}
+.prud .f-step ul li {
+/*  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;*/
+  padding: 0 30px;
+  text-align: left;
+  width: 32%;
+}
+.prud .fblocks {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.prud .f-step span.fblock {
+  color: #fff;
+  background: #EC1B2E;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 25px;
+  font-family: FSAlbertPro-Bold;
+}
+.prud .f-step ul img {
+  max-width: 60px;
+}
+.prud .dosteps {
+  width: 90%;
+  display: block;
+  top: 16%;
+  left: 50%;
+  margin-left: -45%;
+}
+.prud .dostepsm{
+  display: none;
+}
+.prud .footer {
+  bottom: 0%;
+}
+.prud ul.footerbtn {
+  justify-content: center;
+  align-items: center;
+}
+.prud ul.footerbtn li {
+  margin: 0 10px;
+}
+.prud ul.footerbtn img {
+  max-width: 150px;
+}
+.prud ul.footerbtn h5 {
+  font-size: 23px;
+  font-family: FSAlbertPro-Bold;
+  color: #fff;
+}
+.prud .bg {
+  height: auto;
+  margin-bottom: -5px;
+}
+.prud .bgm {
+  display: none;
+}
+#fallingBall {
+  height: 100%;
+}
+@media screen and (max-width:979px){
+.prud {
+  width: 400px;
+  height: 100%;
+}
+.prud .bg{
+  display: none;
+}
+.prud .bgm {
+  height: 500px;
+  display: block;
+  width: 420px !important;
+}
+.prud .top-text {
+  padding: 10px;
+}
+.prud .top-text h2 {
+  font-size: 30px;
+}
+.prud .top-text ul li a {
+  font-size: 11px;
+  padding-right: 0px;
+  border:0;
+  display: inline-block;
+  text-align: center;
+}
+.prud .top-text p {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.prud .top-text {
+  height: 109px;
+  padding: 5px 10px;
+}
+.prud .mobile1, .prud .mobile2 {
+  top: 11%;
+}
+.prud .opportunities {
+  margin-top: -33%;
+}
+.prud .opportunities h4, .prud .footer h3 {
+  font-size: 20px;
+}
+.prud .tb-btm {
+  width: 66%;
+  margin-left: -33%;
+  top: 6%;
+}
+.prud .tb-top {
+  top: -2.5%;
+  margin-left: -43%;
+  width: 86%;
+}
+.prud .opport-desc {
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+.prud .opport-desc li p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+.prud .opport-desc li img {
+  max-width: 35px;
+  margin-right: 18px;
+  margin-bottom: 15px;
+}
+.prud .opport-desc ul {
+  padding: 0px 60px;
+}
+.prud .dosteps{
+  display: none;
+}
+.prud .dostepsm {
+  display: block;
+  top: 9%;
+  padding: 0 20px;
+  height: 310px;
+}
+.prud .f-step h4 {
+  font-size: 20px;
+  margin-top: 34px;
+}
+.prud .f-step ul {
+  flex-wrap: wrap;
+}
+.prud .f-step ul li {
+  display: flex;
+  padding: 0 15px;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.prud .f-step ul img {
+  max-width: 40px;
+  margin-left: 10px;
+}
+.prud .f-step span.fblock {
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+}
+.prud .f-step p {
+  font-size: 15px;
+  margin-left: 15px;
+}
+.prud ul.footerbtn {
+  flex-wrap: wrap;
+}
+.prud ul.footerbtn h5 {
+  font-size: 18px;
+  margin: 42px 0px 10px;
+}
+.prud ul.footerbtn img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+
+
+}
+</style>
+</head>
+   <body>
+      <!-- Main Content -->
+      <section class="prud">
+        <canvas id="fallingBall" class="pabsolute"></canvas>
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bgm.jpg" class=" bgm">
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <div class="pabsolute top-text">
+          <h2>PulseLeads</h2>
+          <p>The business partner you need in today’s digital world.</p>
+          <ul>
+            <li><a href="javascript:void(0)">More Opportunities</a></li>
+            <li><a href="javascript:void(0)">Work Smarter</a></li>
+            <li><a href="javascript:void(0)">Save Time</a></li>
+          </ul>
+        </div>
+        <img src="img/mobile1.png" class="pabsolute mobile1">
+        <img src="img/mobile2.png" class="pabsolute mobile2">
+        <div class="prelative opportunities">
+          <h4>Opportunities at your fingertips</h4>
+          <img src="img/tb-btm.png" class="pabsolute tb-btm">
+          <div class="opport-desc">
+            <ul>
+              <li>
+                <img src="img/icon1.png">
+                <p>Conveniently receive & manage your prospects</p>
+              </li>
+              <li>
+                <img src="img/icon2.png">
+                <p>Get campaign materials & references</p>
+              </li>
+              <li>
+                <img src="img/icon3.png">
+                <p>Organise your daily routines with PulseLeads' Calendar</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="img/icon4.png">
+                <p>Review your performance as you progress</p>
+              </li>
+              <li>
+                <img src="img/icon5.png">
+                <p>Get notified of new opportunities</p>
+              </li>
+              <li>
+                <img src="img/icon6.png">
+                <p>Customise preferences to suit your style</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="prelative footer">
+          <h3>Take the lead with <span>PulseLeads</span> now!</h3>
+          <img src="img/tb-top.png" class="pabsolute tb-top">
+          <div class="f-step">
+            <h4>3 Must-Do Steps to unlock <span>PulseLeads</span></h4>
+            <ul>
+              <li>
+                <div class="fblocks">
+                  <span class="fblock">1</span>
+                  <img src="img/icon7.png">
+                </div>
+                <p>Register for Virtual Training Class in <span>PRU</span>Expert via the SMS link today!</p>
+              </li>
+              <li>
+                <div class="fblocks">
+                  <span class="fblock">2</span>
+                  <img src="img/icon8.png">
+                </div>
+                <p>Download Pulse app and createan account with <span>PRU</span>Partneremail address and the mobile number that you registered with Prudential.</p>
+              </li>
+              <li>
+                <div class="fblocks">
+                  <span class="fblock">3</span>
+                  <img src="img/icon9.png">
+                </div>
+                <p>Look for PulseLeads tile on Pulse app home screen, click to link and start using.</p>
+              </li>
+            </ul>
+            <img src="img/dosteps.png" class="pabsolute dosteps">
+            <img src="img/dostepsm.png" class="pabsolute dostepsm">
+          </div>
+          <ul class="footerbtn">
+            <li><h5>Download Pulse By Prudential Now</h5></li>
+            <li><a href="https://onepulse.page.link/KcEs"><img src="img/as.png"></a></li>
+            <li><a href="https://onepulse.page.link/KcEs"><img src="img/gp.png"></a></li>
+          </ul>
+        </div>
+      </section>
+<script type="text/javascript">
+(function() {
+  var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
+
+  NUM_CONFETTI = 120;
+
+  COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
+
+  PI_2 = 2 * Math.PI;
+
+  canvas = document.getElementById("fallingBall");
+
+  context = canvas.getContext("2d");
+
+  window.w = 0;
+
+  window.h = 0;
+
+  resizeWindow = function() {
+    window.w = canvas.width = window.innerWidth;
+    return window.h = canvas.height = window.innerHeight;
+  };
+
+  window.addEventListener('resize', resizeWindow, false);
+
+  window.onload = function() {
+    return setTimeout(resizeWindow, 0);
+  };
+
+  range = function(a, b) {
+    return (b - a) * Math.random() + a;
+  };
+
+  drawCircle = function(x, y, r, style) {
+    context.beginPath();
+    context.arc(x, y, r, 0, PI_2, false);
+    context.fillStyle = style;
+    return context.fill();
+  };
+
+  xpos = 0.5;
+
+  document.onmousemove = function(e) {
+    return xpos = e.pageX / w;
+  };
+
+  window.requestAnimationFrame = (function() {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
+      return window.setTimeout(callback, 5000 / 60);
+    };
+  })();
+
+  Confetti = (function() {
+    function Confetti() {
+      this.style = COLORS[~~range(0, 5)];
+      this.rgb = "rgba(" + this.style[0] + "," + this.style[0] + "," + this.style[0];
+      this.r = ~~range(1, 3);
+      this.r2 = 2 * this.r;
+      this.replace();
+    }
+
+    Confetti.prototype.replace = function() {
+      this.opacity = 0;
+      this.dop = 0.03 * range(1, 4);
+      this.x = range(-this.r2, w - this.r2);
+      this.y = range(-30, h - this.r2);
+      this.xmax = w - this.r;
+      this.ymax = h - this.r;
+      this.vx = range(0, 2) + 8 * xpos - 5;
+      return this.vy = 0.7 * this.r + range(-1, 1);
+    };
+
+    Confetti.prototype.draw = function() {
+      var ref;
+      this.x += this.vx;
+      this.y += this.vy;
+      this.opacity += this.dop;
+      if (this.opacity > 1) {
+        this.opacity = 1;
+        this.dop *= -1;
+      }
+      if (this.opacity < 0 || this.y > this.ymax) {
+        this.replace();
+      }
+      if (!((0 < (ref = this.x) && ref < this.xmax))) {
+        this.x = (this.x + this.xmax) % this.xmax;
+      }
+      return drawCircle(~~this.x, ~~this.y, this.r, this.rgb + "," + this.opacity + ")");
+    };
+
+    return Confetti;
+
+  })();
+
+  confetti = (function() {
+    var j, ref, results;
+    results = [];
+    for (i = j = 1, ref = NUM_CONFETTI; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+      results.push(new Confetti);
+    }
+    return results;
+  })();
+
+  window.step = function() {
+    var c, j, len, results;
+    requestAnimationFrame(step);
+    context.clearRect(0, 0, w, h);
+    results = [];
+    for (j = 0, len = confetti.length; j < len; j++) {
+      c = confetti[j];
+      results.push(c.draw());
+    }
+    return results;
+  };
+
+  step();
+
+}).call(this);
+</script>
+   </body>
+</html>
+
