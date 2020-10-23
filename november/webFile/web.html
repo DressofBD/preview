@@ -120,7 +120,7 @@ body {
   top: 15%;
   width: 4.5%;
   left: 8.7%;
-  animation: glow1 2s ease-in-out infinite;
+  animation: glow1 3s ease-in-out infinite;
 }
 @keyframes glow1{
   0%{transform: translateY(0); opacity: 0;}
@@ -132,7 +132,7 @@ body {
   top: 15%;
   width: 4.5%;
   right: 8%;
-  animation: glow2 2s ease-in-out infinite;
+  animation: glow2 4s ease-in-out infinite;
   animation-delay: 0.5s;
   opacity: 0;
 }
@@ -147,7 +147,7 @@ body {
   top: 9%;
   left: 24%;
   z-index: 9;
-  animation: glow3 2s ease-in-out infinite;
+  animation: glow3 3s ease-in-out infinite;
 }
 @keyframes glow3{
   0%{transform: translateX(0); opacity: 0;}
@@ -160,7 +160,7 @@ body {
   top: -4%;
   left: 15%;
   z-index: 9;
-  animation: glow4 2s ease-in-out infinite;
+  animation: glow4 3s ease-in-out infinite;
   animation-delay: 1s;
   opacity: 0;
 }
@@ -561,7 +561,7 @@ body {
 (function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
-  NUM_CONFETTI = 100;
+  NUM_CONFETTI = 200;
 
   COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
 
@@ -576,8 +576,8 @@ body {
   window.h = 0;
 
   resizeWindow = function() {
-    window.w = canvas.width = 1000;
-    return window.h = canvas.height = 1000;
+    window.w = canvas.width = 1500;
+    return window.h = canvas.height = 1500;
   };
 
   window.addEventListener('resize', resizeWindow, false);
@@ -599,9 +599,9 @@ body {
 
   xpos = 0.5;
 
-  document.onmousemove = function(e) {
-    return xpos = e.pageX / w;
-  };
+  // document.onmousemove = function(e) {
+  //   return xpos = e.pageX / w;
+  // };
 
   window.requestAnimationFrame = (function() {
     return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
@@ -620,13 +620,13 @@ body {
 
     replace() {
       this.opacity = 0;
-      this.dop = 0.03 * range(1, 4);
+      this.dop = 0.003 * range(1, 4);
       this.x = range(-this.r2, w - this.r2);
       this.y = range(-20, h - this.r2);
       this.xmax = w - this.r;
       this.ymax = h - this.r;
-      this.vx = range(0, 2) + 8 * xpos - 5;
-      return this.vy = 0.7 * this.r + range(-1, 1);
+      this.vx = range(0, 1) + 8 * xpos - 5;
+      return this.vy = 0.2 * this.r + range(0, 0);
     }
 
     draw() {
@@ -636,7 +636,7 @@ body {
       this.opacity += this.dop;
       if (this.opacity > 1) {
         this.opacity = 1;
-        this.dop *= -1;
+        this.dop *= -0.5;
       }
       if (this.opacity < 0 || this.y > this.ymax) {
         this.replace();
@@ -646,13 +646,12 @@ body {
       }
       return drawCircle(~~this.x, ~~this.y, this.r, `${this.rgb},${this.opacity})`);
     }
-
   };
 
   confetti = (function() {
     var j, ref, results;
     results = [];
-    for (i = j = 1, ref = NUM_CONFETTI; (1 <= ref ? j <= ref : j >= ref); i = 1 <= ref ? ++j : --j) {
+    for (i = j = 0, ref = NUM_CONFETTI; (1 <= ref ? j <= ref : j >= ref); i = 1 <= ref ? ++j : --j) {
       results.push(new Confetti);
     }
     return results;
