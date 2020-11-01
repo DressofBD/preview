@@ -1478,7 +1478,9 @@ header .part-dropdown2 button span {
   height: 50px;
   background-size: 20px;
 }
-
+.pf-imgs img {
+  max-height: 40px;
+}
 
 
 
