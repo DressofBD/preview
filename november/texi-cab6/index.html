@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Home</title>
+    <meta name="description" content="The premier private hire transfer services are available at Meadowpark. Get a safe, comfortable and prompt access to Heathrow, Stansted and Luton airport">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-alt1.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <script src="assets/js/modernizr.custom.24530.js"></script>
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/cabookie-style.css">
+    <!--[if lt IE 10]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.placeholder.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  </head>
+  <body>
+    <div class="boxed-container">
+      <div class="animatedParent">
+        <div class="header__container  animated fadeInDownShort">
+          <div class="container">
+            <header class="header">
+              <div class="header__logo">
+                <a href="index.html"><img src='assets/images/logo.png' alt='Meadowpark' style='border:0px;'></a>
+                <button data-target="#cargopress-navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="navbar-toggle__text">MENU</span>
+                <span class="navbar-toggle__icon-bar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </span>
+                </button>
+              </div>
+              <div class="header__navigation">
+                <nav class="collapse navbar-collapse" id="cargopress-navbar-collapse">
+                  <ul class="lsn main-navigation js-main-nav js-dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__widgets">
+                <div class="widget-icon-box">
+                  <a href="tel:+441506631333" class="gColor">
+                    <div class="icon-box">
+                      <i class="fa fa-headphones"></i>
+                      <h4 class="icon-box__title">Call Us Anytime</h4>
+                      <span class="icon-box__subtitle">+44 1506 631333</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="widget-icon-box">
+                  <a href="mailto:info@example.com" class="gColor">
+                    <div class="icon-box">
+                      <i class="fa fa-envelope"></i>
+                      <h4 class="icon-box__title">Email Us</h4>
+                      <span class="icon-box__subtitle">info@example.com</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="widget-icon-box">
+                  <div class="icon-box">
+                    <div id="google_translate_element"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__navigation-widgets">
+                <a href="cabookie.html" class="btn btn-info" id="button_requestQuote">REQUEST A QUOTE</a>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron--with-captions animatedParent">
+        <div class=" animated fadeInUpShort">
+          <div class="carousel-inner">
+            <div class="item active"><img alt="Meadowpark" src="assets/images/bg-1.jpg"></div>
+          </div>
+          <div class="container">
+            <div class="jumbotron-content">
+              <div class="jumbotron-content__title">
+                <h1 class="text-uppercase">WELCOME TO Meadowpark</h1>
+              </div>
+              <div style="display: block; margin: 0 auto; text-align: center; max-width: 1200px; z-index: 9999;">
+                <div style="position: relative; z-index: 999;">
+                  <div class='row banner-v2'>
+                    <form name='' id='' class='' action='' method='' data-parsley-validate>
+                      <div class='form-group has-feedback'>
+                        <input type='text' id='txtPickUpAirport' name='txtPickUp' placeholder='Pick Up - Airport/Address' class='form-control autocomplete-Airport has-feedback-left' autocomplete='off' required='required' data-parsley-error-message='Please select valid airport/address'>
+                        <input type='text' id='txtPickUp' name='txtPickUp' placeholder='Pick Up - Airport/Address' class='form-control autocomplete-Google has-feedback-left' autocomplete='off' style='display: none;' disabled='disabled' data-parsley-error-message='Please select valid address'>
+                        <input type='hidden' id='txtPickUpLat' name='txtPickUpLat'>
+                        <input type='hidden' id='txtPickUpLng' name='txtPickUpLng'>
+                        <span class='fas fa-map-pin form-control-feedback left' aria-hidden='true'></span>
+                      </div>
+                      <div class='form-group has-feedback'>
+                        <div class='input-group'>
+                          <input type='text' id='txtDropOff1Airport' name='txtDropOff[]' placeholder='Drop Off - Airport/Address' class='form-control autocomplete-Airport has-feedback-left' autocomplete='off' required='required' data-parsley-error-message='Please select valid airport/address'>
+                          <input type='text' id='txtDropOff1' name='txtDropOff[]' placeholder='Drop Off - Airport/Address' class='form-control autocomplete-Google has-feedback-left' autocomplete='off' style='display: none;' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                          <input type='hidden' id='txtDropOff1Lat' name='txtDropOff1Lat'>
+                          <input type='hidden' id='txtDropOff1Lng' name='txtDropOff1Lng'>
+                          <span class='fas fa-flag form-control-feedback left' aria-hidden='true'></span>
+                          <span class='input-group-btn'>
+                            <button type='button' class='btn btn-primary' onclick='addDropOff();'>
+                              <i class='fas fa-plus' aria-hidden='true'></i>
+                            </button>
+                          </span>
+                        </div>
+                        <div id='addedRows' class='form-group'>
+                          <div id='dropOff2' style='display: none;'>
+                            <div class='form-group'>
+                              <div class='input-group'>
+                                <input type='text' id='txtDropOff2Airport' name='txtDropOff[]' placeholder='Additional Drop Off' class='form-control autocomplete-Airport has-feedback-left' autocomplete='off' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                                <input type='text' id='txtDropOff2' name='txtDropOff[]' placeholder='Additional Drop Off' class='form-control autocomplete-Google has-feedback-left' autocomplete='off' style='display: none;' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                                <input type='hidden' id='txtDropOff2Lat' name='txtDropOff2Lat'>
+                                <input type='hidden' id='txtDropOff2Lng' name='txtDropOff2Lng'>
+                                <span class='fas fa-flag form-control-feedback left' aria-hidden='true'></span>
+                                <span class='input-group-btn'>
+                                  <button type='button' class='btn btn-danger' onclick='removeDropOff(2);'>
+                                    <i class='fas fa-minus' aria-hidden='true'></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div id='dropOff3' style='display: none;'>
+                            <div class='form-group'>
+                              <div class='input-group'>
+                                <input type='text' id='txtDropOff3Airport' name='txtDropOff[]' placeholder='Additional Drop Off' class='form-control autocomplete-Airport has-feedback-left' autocomplete='off' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                                <input type='text' id='txtDropOff3' name='txtDropOff[]' placeholder='Additional Drop Off' class='form-control autocomplete-Google has-feedback-left' autocomplete='off' style='display: none;' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                                <input type='hidden' id='txtDropOff3Lat' name='txtDropOff3Lat'>
+                                <input type='hidden' id='txtDropOff3Lng' name='txtDropOff3Lng'>
+                                <span class='fas fa-flag form-control-feedback left' aria-hidden='true'></span>
+                                <span class='input-group-btn'>
+                                  <button type='button' class='btn btn-danger' onclick='removeDropOff(3);'>
+                                    <i class='fas fa-minus' aria-hidden='true'></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div id='dropOff4' style='display: none;'>
+                            <div class='form-group'>
+                              <div class='input-group'>
+                                <input type='text' id='txtDropOff4Airport' name='txtDropOff[]' placeholder='Additional Drop Off' class='form-control autocomplete-Airport has-feedback-left' autocomplete='off' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                                <input type='text' id='txtDropOff4' name='txtDropOff[]' placeholder='Additional Drop Off' class='form-control autocomplete-Google has-feedback-left' autocomplete='off' style='display: none;' disabled='disabled' data-parsley-error-message='Please select valid airport/address'>
+                                <input type='hidden' id='txtDropOff4Lat' name='txtDropOff4Lat'>
+                                <input type='hidden' id='txtDropOff4Lng' name='txtDropOff4Lng'>
+                                <span class='fas fa-flag form-control-feedback left' aria-hidden='true'></span>
+                                <span class='input-group-btn'>
+                                  <button type='button' class='btn btn-danger' onclick='removeDropOff(4);'>
+                                    <i class='fas fa-minus' aria-hidden='true'></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='form-group has-feedback'>
+                        <input type='text' class='form-control has-feedback-left' id='datetimepicker' name='txtDateTime' placeholder='Pickup date & time' required data-parsley-error-message='Please select valid date & time' readonly='readonly'>
+                        <span class='fas fa-calendar-alt form-control-feedback left' aria-hidden='true'></span>
+                      </div>
+                      <div class='form-group'>
+                        <input type='button' class='btn btn-primary' id='btnCheckPrice' value='BOOK'>
+                      </div>
+                      <input type='hidden' name='cabookie' value='M'><input type='hidden' name='key' id='key'>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" role="main">
+        <div class="row jumbotron-overlap first">
+          <div class="col-sm-12 text-center margin-bottom-30 animatedParent">
+            <div class="featured-widget animated fadeInDownShort">
+              <h3 class="widget-title">WELCOME TO Meadowpark</h3>
+              <p><strong>At Meadowpark, our main objective is to provide customer satisfaction.</strong></p>
+              <p>We are a dynamic taxi company based in West Lothian area with over a decade of experience of delivering nothing but top-notch quality transfer service to clients of all walks of life. We serve all nearby seaports, airports, stations, and local destinations. All our personnels are exceptionally trained, and our drivers are fully vetted to offer you world-class experience and utmost safety.</p>
+              <p>You can count on us to get you from/to your destination fast, safely, and comfortably, all without hurting your pocket. We highly welcome account and contract work customers.</p>
+            </div>
+          </div>
+          <div class="row animatedParent"  data-sequence="200">
+            <div class="col-md-4 margin-bottom-30 animated fadeInUpShort" data-id="1">
+              <h5 class="h4">Polite Drivers</h5>
+              <p>Our drivers offer a more personalized service thanks to that natural, characterful, warmth and friendliness of our staff.</p>
+            </div>
+            <div class="col-md-4 margin-bottom-30 animated fadeInUpShort" data-id="2">
+              <h5 class="h4">Fixed Prices</h5>
+              <p>At Meadowpark we value transparency. The price you see on our website, is the price you pay. We do not charge any other fees on any of our vehicles.</p>
+            </div>
+            <div class="col-md-4 margin-bottom-30 animated fadeInUpShort" data-id="3">
+              <h5 class="h4">24/7 Service</h5>
+              <p>We operate 24 Hours a Day, 7 Days a Week, 365 Days a Year Please book your trip at any time using our website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="values margin-bottom-60 animatedParent">
+        <div class="container animated fadeInUpShort">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3>We truly care about our clients</h3>
+            <hr class="hr-quote">
+            <p class="text-center">We have a great track record for providing a reliable service for all our customers.  Ensuring the best possible of customer service and professional approach. Our drivers are polite and very courteous. If your looking for an airport transfer in London, then don't hesitate to book with us. Offering a range of vehicles from standard cars, MPVs and an executive fleet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container margin-bottom-30" role="main">
+        <div class="row animatedParent">
+          <div class="col-sm-12 animated fadeInDownShort">
+            <h3 class="widget-title big lined">
+              <span>OUR SERVICES</span>
+            </h3>
+          </div>
+        </div>
+        <div class="row animatedParent" data-sequence="200">
+          <div class="col-sm-4 animated fadeInUpShort" data-id="1">
+            <div class="widget_pw_icon_box margin-bottom-30">
+              <a class="icon-box">
+                <h4 class="icon-box__title">Airport Transfer</h4>
+                <span class="icon-box__subtitle">
+                  <ul class="wcu-list">
+                    <li><i class="fas fa-check-circle"></i>30 minutes parking, 30 minutes wait time and meet &amp; greet included</li>
+                    <li><i class="fas fa-check-circle"></i>Covers transfers from/to all airports near Heathrow, Gatwick and City Airport</li>
+                    <li><i class="fas fa-check-circle"></i>Groups of up to 8 members</li>
+                  </ul>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 animated fadeInUpShort" data-id="2">
+            <div class="widget_pw_icon_box margin-bottom-30">
+              <a class="icon-box">
+                <h4 class="icon-box__title">Seaport Transfer</h4>
+                <span class="icon-box__subtitle">
+                  <ul class="wcu-list">
+                    <li><i class="fas fa-check-circle"></i>Includes 30 minutes parking, 30 minutes wait time.</li>
+                    <li><i class="fas fa-check-circle"></i>Covers transfer to/from West Lothian cruise terminal, Edinburgh Seaport and other nearby ports</li>
+                    <li><i class="fas fa-check-circle"></i>Includes Meet &amp; Greet</li>
+                  </ul>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4 animated fadeInUpShort" data-id="3">
+            <div class="widget_pw_icon_box margin-bottom-30">
+              <a target="_self" href="#!" class="icon-box">
+                <h4 class="icon-box__title">Wheelchair Accessible</h4>
+                <span class="icon-box__subtitle">
+                  <ul class="wcu-list text-left">
+                    <li><i class="fas fa-check-circle"></i>Wheelchair accessible vehicles available on request for all types of transfers on offer</li>
+                    <li><i class="fas fa-check-circle"></i>Latest vehicle models, top-rate services, and free WiFi included</li>
+                    <li><i class="fas fa-check-circle"></i>Groups of 8+ members</li>
+                  </ul>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta animatedParent">
+        <div class="container animated fadeInDownShort">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="call-to-action">
+                <div class="call-to-action__text">Book with us today for Airport Taxi Services</div>
+                <div class="call-to-action__button">
+                  <a href="cabookie.html" class="btn btn-primary">BOOK YOUR JOURNEY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animatedParent">
+        <footer class="footer animated fadeInDownShort">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom-20">
+                  <div class="widget_nav_menu">
+                    <h6 class="footer-top__headings">Company</h6>
+                    <div class='margin-bottom-10'>Licensed Under: West Lothian Council</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom-20">
+                  <div class="widget_nav_menu">
+                    <h6 class="footer-top__headings">Resources</h6>
+                    <ul class="none valign3 left">
+                      <li><a href="terms.html" class="graylink7">Terms</a></li>
+                      <li><a href="privacy-policy.html" class="graylink7">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom-20">
+                  <div class="widget_nav_menu">
+                    <h6 class="footer-top__headings">Contact</h6>
+                    <ul class="none white valign3 left">
+                      <li><a href="tel:+441506631333" class="graylink7"><i class="fas fa-phone"></i>&nbsp; +44 1506 631333</a></li>
+                      <li><a href="mailto:info@example.com" class="graylink7"><i class="fas fa-envelope"></i>&nbsp; info@example.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom-20">
+                  <div class="widget_nav_menu">
+                    <h6 class="footer-top__headings">Address</h6>
+                    <ul class="none valign3 white left">
+                      <li><i class='fas fa-map-marker-alt fa-lg'></i>&nbsp; 19a Glasgow Road, Bathgate, West Lothian EH48 2AB United Kingdom</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="footer-bottom__left">&copy;&nbsp;2020&nbsp;MMH Private Hire. All Rights Reserved</div>
+              <div class="footer-bottom__right"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/combined.js"></script>
+      <link href="assets/css/autocomplete.css" rel="stylesheet">
+      <link href="assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
+      <link href="assets/css/pnotify.css" rel="stylesheet">
+      <script src="assets/js/moment.min.js"></script>
+      <script src="assets/js/moment-timezone-with-data.min.js"></script>
+      <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="assets/js/parsley.min.js"></script>
+      <script src="assets/js/pnotify.js"></script>
+      <script src="assets/js/cabookie_airports.js?ver=1.1805"></script>
+      <script src="assets/js/autocomplete.js"></script>
+      <script src="assets/js/css3-animate-it.js"></script>
+      <script>
+        var key = "2V5LfF7csu";
+        var SERVICE_COUNTRY = "GB";
+        var timezone = 'Europe/London';
+        var advanceBookingFilterMinValue = '1';
+        var advanceBookingFilterMinType = 'hours'
+        var advanceBookingFilterMaxValue = '1';
+        var advanceBookingFilterMaxType = 'months';
+        var pickUpDateTime = '';
+        var maxAdditionalDropoffs = 3;
+        var passengers = '1';
+        var childSeats = '0';
+        var smallLuggage = '0';
+        var largeLuggage = '0';
+        var vehicleIDSelected = '';
+        var pickUpWaitingTime = '';
+        var paymentMode = '';
+        var paymentOptionsCount = '0';
+        var paymentOptionDefault = '';
+        var postcodeCity = '';
+        var pickUpLat = '';
+        var pickUpLng = '';
+      </script>
+      <script src="assets/js/cabookie.js"></script>
+      <script src="assets/js/bootstrap.combined.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
+        }
+      </script>
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>   
+    </div>
+  </body>
+</html>
+
