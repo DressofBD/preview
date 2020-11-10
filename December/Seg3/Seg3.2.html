@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Happy BirthDay! | PRUDENTIAL</title>
+    <link rel="shortcut icon" type="image/icon" href="img/Prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(img/FSAlbertPro-Bold.otf);
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'FSAlbertPro-Bold';
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.prud {
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #64bfba;
+}
+.prud img{
+  max-width: 100%;
+  height: auto;
+}
+.prud .pabsolute{
+  position: absolute;
+}
+.prud .prudential-logo {
+  max-width:  30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+.prud .hbd {
+  top: 35%;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+}
+.prud .text-box {
+  top: 55%;
+  text-align: center;
+  width: 57%;
+  display: block;
+  z-index: 99;
+  left: 50%;
+  margin-left: -28%;
+}
+.prud .tboxbg {
+  top: 54%;
+  width: 68%;
+  left: 50%;
+  margin-left: -34%;
+}
+.prud p {
+  margin: 6px 0;
+  font-size: 21px;
+  color: #fff;
+}
+.prud .bg {
+  height: auto;
+  margin-bottom: -10px;
+}
+.prud .name-box {
+  top: 2%;
+  width: 100%;
+  z-index: 9;
+  left: 7%;
+  max-width: 55%;
+}
+.prud .name-box h2{
+  margin: 20px 0;
+  color: #000;
+  text-align: left;
+  font-size: 24px;
+}
+.prud .star {
+  width: 18%;
+  animation: star 2s ease-in-out infinite alternate;
+  transform: scale(0);
+}
+@-webkit-keyframes star {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    filter: grayscale(0%);
+  }
+  50% { 
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    filter: grayscale(0%);
+  }
+  55% { 
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(100%);
+  }
+  100% { 
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    filter: grayscale(0%);
+  }
+}
+@keyframes star {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    filter: grayscale(0%);
+  }
+  50% { 
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    filter: grayscale(0%);
+  }
+  55% { 
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: grayscale(100%);
+  }
+  100% { 
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    filter: grayscale(0%);
+  }
+}
+.prud .star1 {
+  top: 16%;
+  left: 43%;
+}
+.prud .star2 {
+  top: 32%;
+  left: 3%;
+  animation-delay: 1s;
+}
+.prud .star3 {
+  top: 33%;
+  left: 28%;
+  animation-delay: 0.5s;
+}
+.prud .star4 {
+  top: 37%;
+  left: 86%;
+  animation-delay: 1.5s;
+}
+.prud .star5 {
+  top: 48%;
+  left: 61%;
+  animation-delay: 0.7s;
+}
+.prud .star6 {
+  top: 60%;
+  left: 8%;
+  animation-delay: 0.5s;
+}
+.prud .star7 {
+  top: 62%;
+  left: 46%;
+  animation-delay: 1.3s;
+}
+.prud .star8 {
+  top: 61%;
+  left: 69%;
+  animation-delay: 1.5s;
+}
+.prud .star9 {
+  top: 72%;
+  left: 35%;
+  animation-delay: 1.7s;
+}
+.prud .ball {
+  animation: ball 2s ease-in-out infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  transform-origin: bottom center;
+}
+@-webkit-keyframes ball {
+  0% { 
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    filter: grayscale(0%);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    filter: grayscale(0%);
+  }
+}
+@keyframes ball {
+  0% { 
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    filter: grayscale(0%);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    filter: grayscale(0%);
+  }
+}
+.prud .ball1 {
+  width: 6%;
+  top: 32%;
+  left: 29%;
+}
+.prud .ball2 {
+  width: 5%;
+  top: 23%;
+  left: 30%;
+  animation-delay: 0.5s;
+}
+.prud .ball3 {
+  width: 3%;
+  top: 37%;
+  left: 28%;
+  animation-delay: 1.5s;
+}
+.prud .ball4 {
+  width: 5%;
+  top: 49%;
+  left: 88%;
+  animation-delay: 1s;
+}
+.prud .ball5 {
+  width: 4%;
+  top: 51.5%;
+  left: 84%;
+  animation-delay: 0.75s;
+}
+.prud .ball6 {
+  width: 3%;
+  top: 55%;
+  left: 84.5%;
+  animation-delay: 1.3s;
+}
+.prud .ball7 {
+  width: 6%;
+  top: 87%;
+  left: 63%;
+  animation-delay: 0.4s;
+}
+.prud .ball8 {
+  width: 5%;
+  top: 86%;
+  left: 56%;
+  animation-delay: 1s;
+}
+.prud .ball9 {
+  width: 4%;
+  top: 89%;
+  left: 54%;
+}
+.prud .ball10 {
+  width: 4%;
+  top: 50%;
+  left: 17%;
+  animation-delay: 0.5s;
+}
+.prud .bgm{
+  display: none;
+}
+@media screen and (max-width:979px){
+.prud {
+  width: 100%;
+  width: 400px;
+  height: 800px;
+}
+.prud .hbd {
+  top: 35%;
+  width: 70%;
+  margin-left: -35%;
+}
+.prud .name-box {
+  font-size: 12px;
+  top: 0%;
+}
+.prud .name-box h2 {
+  font-size: 20px;
+}
+.prud .text-box {
+  top: 55%;
+  width: 78%;
+  margin-left: -39%;
+}
+.prud .tboxbg {
+  top: 55%;
+  width: 90%;
+  margin-left: -45%;
+}
+.prud p {
+  font-size: 16px;
+}
+.prud .ball1 {
+  width: 8%;
+  top: 31%;
+  left: 17%;
+}
+.prud .ball2 {
+  width: 7%;
+  top: 22%;
+  left: 21%;
+}
+.prud .ball3 {
+  width: 6%;
+  top: 35%;
+  left: 14%;
+}
+.prud .ball4 {
+  width: 7%;
+  top: 50%;
+  left: 97%;
+}
+.prud .ball5 {
+  width: 5%;
+  top: 54%;
+  left: 96%;
+}
+.prud .ball6 {
+  width: 4%;
+  top: 56%;
+  left: 96%;
+}
+.prud .ball7 {
+  width: 8%;
+  top: 86%;
+  left: 68%;
+}
+.prud .ball8 {
+  width: 7%;
+  top: 85%;
+  left: 58%;
+}
+.prud .ball9 {
+  width: 5%;
+  top: 88%;
+}
+.prud .ball10 {
+  width: 7%;
+  top: 49%;
+  left: 3%;
+}
+.prud .star {
+  width: 20%;
+}
+.prud .star1 {
+  top: 17%;
+}
+.prud .star2 {
+  top: 34%;
+  left: -10%;
+}
+.prud .star3 {
+  top: 34%;
+  left: 21%;
+}
+.prud .star4 {
+  top: 32%;
+  left: 91%;
+}
+.prud .star5 {
+  left: 69%;
+}
+.prud .star6 {
+  top: 61%;
+  left: -8%;
+}
+.prud .star7 {
+  top: 63%;
+}
+.prud .star8 {
+  top: 61%;
+  left: 81%;
+}
+.prud .star9 {
+  top: 73%;
+  left: 31%;
+}
+.prud .bg{
+  display: none;
+}
+.prud .bgm {
+  height: 800px;
+  display: block;
+  width: 420px !important;
+}
+}
+</style>
+</head>
+   <body>
+      <section class="prud">
+        <img src="img/bg.jpg" class=" bg">
+        <img src="img/bg-m.jpg" class=" bgm">
+        <div class="pabsolute name-box">
+          <h2>Dear <$name$></h2>
+        </div>
+        <img src="img/Prudential.png" class="pabsolute prudential-logo">
+        <img src="img/hbd.png" class="pabsolute hbd">
+        <img src="img/star.png" class="pabsolute star star1">
+        <img src="img/star.png" class="pabsolute star star2">
+        <img src="img/star.png" class="pabsolute star star3">
+        <img src="img/star.png" class="pabsolute star star4">
+        <img src="img/star.png" class="pabsolute star star5">
+        <img src="img/star.png" class="pabsolute star star6">
+        <img src="img/star.png" class="pabsolute star star7">
+        <img src="img/star.png" class="pabsolute star star8">
+        <img src="img/star.png" class="pabsolute star star9">
+        <img src="img/ball1.png" class="pabsolute ball ball1">
+        <img src="img/ball2.png" class="pabsolute ball ball2">
+        <img src="img/ball3.png" class="pabsolute ball ball3">
+        <img src="img/ball1.png" class="pabsolute ball ball4">
+        <img src="img/ball2.png" class="pabsolute ball ball5">
+        <img src="img/ball3.png" class="pabsolute ball ball6">
+        <img src="img/ball1.png" class="pabsolute ball ball7">
+        <img src="img/ball2.png" class="pabsolute ball ball8">
+        <img src="img/ball3.png" class="pabsolute ball ball9">
+        <img src="img/ball2.png" class="pabsolute ball ball10">
+        <img src="img/tbox.png" class="pabsolute tboxbg">
+        <div class="pabsolute text-box">
+          <p>You may be getting older but your birthday is still worth celebrating because you are getting better as you move on in life.</p>
+        </div>
+      </section>
+   </body>
+</html>
+
