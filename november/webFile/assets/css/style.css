@@ -314,6 +314,9 @@ header .part-dropdown2 button{
 .user-menu ul li {
   border-bottom: 1px solid #8e8e8e;
 }
+.user-menu ul li:last-child {
+  border-bottom: 0px solid #8e8e8e;
+}
 .user-menu ul li a{
   color: #fff;
 }
@@ -1047,6 +1050,7 @@ a.shop-img-top:hover{
 }
 .shop-dtls-back h4{
   margin: 0;
+  font-weight: bold;
 }
 
 
@@ -1100,6 +1104,10 @@ label small{
 form.app-block{
   display: none;
 }
+.payment-form .form-control {
+  background-color: #eaeaea;
+  border: none;
+}
 
 
 
@@ -1129,6 +1137,110 @@ form.app-block{
   font-weight: normal !important;
   font-size: 18px !important;
 }
+
+
+
+
+
+
+
+.home-bg {
+  background-image: url(../images/body-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 113px);
+  width: 100vw;
+}
+.home-bg .main-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.home-overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  position: relative;
+}
+.keyboard {
+}
+.keyboard a {
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 17px;
+}
+.keyboard a.red {
+  background: #dd1738;
+}
+.keyboard a:hover{
+  background: #fff;
+  color: #dd1738;
+  border: 1px solid #dd1738;
+}
+.home-overlay h2 {
+  font-weight: bold;
+  text-shadow: 0px 0px 12px #000;
+  font-size: 35px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.logo2 {
+  max-width: 120px;
+}
+.playbtn-img {
+  max-width: 45%;
+}
+.home-bg .main-content {
+  margin-bottom: 0;
+}
+.home-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.applinks {
+  display: flex;
+  position: absolute;
+  left: 25px;
+  bottom: 40px;
+}
+.applinks img{
+  max-width: 120px;
+}
+.home-app-center a.play {
+  color: #000;
+  padding: 7px 35px;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 17px;
+  background: #fff;
+}
+.home-app-center {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home-app-center a.play:hover{
+  background: #dd1738;
+  border: 1px solid #fff;
+}
+.home-app-center img {
+  position: absolute;
+  max-width: 110px;
+  top: -112px;
+  left: 49%;
+}
+
+
 
 
 
@@ -1194,9 +1306,15 @@ form.app-block{
 .parents-desc2:after{
   display: none !important;
 }
-
-
-
+.playbtn-img {
+  max-width: 80%;
+}
+.applinks img {
+  max-width: 80px;
+}
+.home-overlay h2 {
+  font-size: 30px;
+}
 
 
 
@@ -1575,6 +1693,11 @@ header .part-dropdown2 button span {
   padding: 2px 10px;
   font-size: 13px;
 }
+.col-form-label, .form-control {
+  font-size: 15px;
+}
+
+
 
 
 }
@@ -1588,9 +1711,6 @@ header .part-dropdown2 button span {
 
 
 @media screen and (max-width: 1199px)  and (orientation: landscape) {
-   body{
-    /*background: #ccc;*/
-   }
 .part-menu, .shop-top {
   display: none;
 }
@@ -1764,9 +1884,21 @@ max-width: 41.666667%;
   padding-top: 20px;
   margin-left: 20px;
 }
-
-
-
+.user-menu {
+  width: 100%;
+  right: 0;
+  height: calc(100% - 76px);
+  background-image: url(../images/webee1.png);
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: 120px;
+}
+.user-menu ul li {
+  width: 50%;
+}
+.payment-confirm {
+  margin-top: -46px;
+}
 
 
 
@@ -1849,6 +1981,11 @@ max-width: 41.666667%;
   height: 35px;
   margin-right: auto;
 }
+.home-app-center {
+  margin-top: 50px;
+}
+
+
 
 
 }
@@ -1910,6 +2047,26 @@ max-width: 41.666667%;
 .shop-last-img {
   width: 30%;
 }
+.home-bg {
+  height: calc(100vh - 109px);
+}
+label small {
+  font-size: 11px;
+}
+.col-form-label, .form-control {
+  font-size: 15px;
+}
+.payment-confirm h2 {
+  margin: 5px auto;
+  font-size: 25px;
+}
+.payment-confirm {
+  margin-top: -32px;
+}
+
+
+
+
 
 }
 @media (max-width: 525px) and (orientation: landscape){
