@@ -1,3 +1,4 @@
+/*=======================================================Common css for all sizes=====================================================*/
 html {
   color: #222;
   font-size: 1em;
@@ -80,9 +81,6 @@ textarea {
 .clearfix:after {
   clear: both;
 }
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -156,10 +154,7 @@ a:hover{text-decoration: none;}
 a{color: #1e457a; transition: 0.5s;}
 a:hover {color: #000;}
 
-
-
-
-
+/*Fonts*/
 @font-face {
 font-family: 'OpenSansHebrew-Bold';
 font-style: normal;
@@ -213,6 +208,10 @@ src: url('../fonts/open-sans-hebrew/OpenSansHebrew-Regular.ttf');
 font-family: FbExtazaRegular;
 src: url(../fonts/FbExtazaRegular.ttf);
 }
+
+
+/*==========================================================Desktop size====================================================*/
+
 body{
   background-color: #f6f6f6;
   width: 100%;
@@ -225,7 +224,7 @@ body{
 }
 header {
   background-color: #1e457a;
-  padding: 10px;
+  padding: 5px 10px;
 }
 .header-parts {
   display: flex;
@@ -240,7 +239,7 @@ header {
   font-size: 25px;
 }
 .part-logo img{
-  max-width: 100px;
+  max-width: 80px;
   margin-right: 10px;
 }
 .part-menu{
@@ -305,7 +304,7 @@ header .part-dropdown2 button{
 /*Dropdown*/
 .user-menu {
   position: absolute;
-  top: 76px;
+  top: 55px;
   background: #3063a8;
   color: #fff;
   padding: 15px;
@@ -328,7 +327,7 @@ header .part-dropdown2 button{
 
 
 
-
+/*content pages*/
 .page-heading{
   text-align: center;
   font-family: 'OpenSansHebrew-Bold';
@@ -1059,10 +1058,6 @@ a.shop-img-top:hover{
 
 
 
-
-
-
-
 /*Shop payment*/
 .payment-form {
   width: 50%;
@@ -1097,7 +1092,6 @@ label small{
 .payment-confirm .btn-submit {
   font-weight: bold;
   font-size: 20px;
-  /*display: inline-block;*/
   max-width: 230px;
   border-radius: 20px;
 }
@@ -1143,13 +1137,13 @@ form.app-block{
 
 
 
-
+/*Homepage*/
 .home-bg {
   background-image: url(../images/body-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 113px);
+  height: calc(100vh - 92px);
   width: 100vw;
 }
 .home-bg .main-content {
@@ -1243,9 +1237,9 @@ form.app-block{
 
 
 
-
 /*===================================================Responsive==================================================*/
 
+/*Mobile/tab size max width 1199px*/
 @media(max-width: 1199px){
 .parents-block::after {
   right: -6%;
@@ -1261,8 +1255,7 @@ form.app-block{
 
 
 
-
-
+/*Mobile/tab size max width 991px*/
 @media(max-width: 991px){
 .header-parts {
   flex-wrap: wrap;
@@ -1271,9 +1264,6 @@ form.app-block{
 .part-logo{
   order: 1;
   width: 50%;
-}
-.part-logo, .part-dropdown1 {
-  margin-bottom: 10px;
 }
 .part-menu {
   order: 3;
@@ -1289,7 +1279,7 @@ form.app-block{
   padding-right: 0;
 }
 .user-menu {
-  top: 117px;
+  top: 97px;
 }
 .parents-block::after {
   right: -9%;
@@ -1316,18 +1306,13 @@ form.app-block{
   font-size: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+/*Mobile size max width 767px*/
 @media(max-width: 767px){
 body{
   font-size: 16px;
@@ -1346,7 +1331,7 @@ header .part-dropdown2 button {
 }
 
 .user-menu {
-  top: 116px;
+  top: 97px;
 }
 .center-content {
   width: 320px;
@@ -1556,17 +1541,12 @@ ul.stars{
   font-size: 15px;
 }
 
-
-
-
-
 }
 
 
 
 
-
-
+/*Mobile size max width 520px*/
 @media(max-width: 520px){
 .circle_percent {
   font-size: 120px;
@@ -1612,6 +1592,7 @@ header {
 }
 .part-menu {
   padding: 0;
+  margin-top: 10px;
 }
 header .part-dropdown2 button {
   padding: 0;
@@ -1621,7 +1602,7 @@ header .part-dropdown2 button span {
   font-size: 12px;
 }
 .user-menu {
-  top: 95px;
+  top: 96px;
 }
 .a-lg {
   font-size: 20px;
@@ -1671,11 +1652,24 @@ header .part-dropdown2 button span {
   margin-bottom: 10px;
 }
 
-
-
-
 }
 
+
+/*All size max height 520px*/
+@media(max-height: 520px){
+  .playbtn-img {
+  max-width: 25%;
+}
+.home-overlay h2 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.keyboard a {
+  margin-top: 5px;
+}
+}
+
+/*Mobile size max width 400px*/
 @media(max-width: 400px){
 .parents-block::after {
   top: 45%;
@@ -1697,19 +1691,14 @@ header .part-dropdown2 button span {
   font-size: 15px;
 }
 
-
-
-
 }
-
-
 
 
 
 
 /*=========================================================orientation: landscape=====================================================*/
 
-
+/*App size max width  1199px*/
 @media screen and (max-width: 1199px)  and (orientation: landscape) {
 .part-menu, .shop-top {
   display: none;
@@ -1887,7 +1876,7 @@ max-width: 41.666667%;
 .user-menu {
   width: 100%;
   right: 0;
-  height: calc(100% - 76px);
+  height: calc(100% - 55px);
   background-image: url(../images/webee1.png);
   background-repeat: no-repeat;
   background-position: 10% center;
@@ -1900,21 +1889,10 @@ max-width: 41.666667%;
   margin-top: -46px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
 @media screen and (max-width: 1199px) and (orientation: landscape) {
 .parents-block::after {
   right: -8%;
@@ -1924,12 +1902,15 @@ max-width: 41.666667%;
   padding-top: 50px;
 }
 }
+
+
+/*App size max width  991px*/
 @media screen and (max-width: 991px) and (orientation: landscape){
   .link-sm {
   font-size: 16px;
 }
 .user-menu {
-  top: 86px;
+  top: 92px;
 }
 .content-top-mnu ul li a {
   padding: 5px 25px;
@@ -1985,10 +1966,11 @@ max-width: 41.666667%;
   margin-top: 50px;
 }
 
-
-
-
 }
+
+
+
+/*App size max width  767px*/
 @media screen and (max-width: 767px) and (orientation: landscape){
 .shop-btns .link-sm {
   padding: 2px 10px;
@@ -2011,7 +1993,7 @@ max-width: 41.666667%;
   margin-top: 25px;
 }
 .user-menu {
-  top: 75px;
+  top: 89px;
 }
 .circle_percent {
   font-size: 150px;
@@ -2048,7 +2030,7 @@ max-width: 41.666667%;
   width: 30%;
 }
 .home-bg {
-  height: calc(100vh - 109px);
+  height: calc(100vh - 90px);
 }
 label small {
   font-size: 11px;
@@ -2064,11 +2046,12 @@ label small {
   margin-top: -32px;
 }
 
-
-
-
-
 }
+
+
+
+
+/*App size max width  525px*/
 @media (max-width: 525px) and (orientation: landscape){
 .shop-content, .shop-btns {
   flex-direction: column;
@@ -2090,8 +2073,6 @@ header .part-dropdown2 button span {
   margin: 0 5px;
   font-size: 16px;
 }
-
-
 
 }
 
