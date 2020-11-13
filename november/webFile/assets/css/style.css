@@ -1659,6 +1659,10 @@ header .part-dropdown2 button span {
 
 /*All size max height 520px*/
 @media(max-height: 520px){
+.home-bg {
+  height: auto;
+  min-height: 300px;
+}
   .playbtn-img {
   max-width: 25%;
 }
