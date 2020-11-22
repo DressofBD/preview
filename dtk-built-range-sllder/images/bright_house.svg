@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60.22" height="60.22" viewBox="0 0 60.22 60.22">
+  <g id="bright_house" data-name="bright house" transform="translate(-1589 -669)">
+    <path id="Path_1679" data-name="Path 1679" d="M1662.134,810.939v24.415H1618V810" transform="translate(-21.427 -107.134)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_1680" data-name="Path 1680" d="M1619.11,670,1590,690.659v7.512h7.512v-3.756l21.6-15.494,21.6,15.494v4.7h7.512v-8.451Z" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <g id="Group_1416" data-name="Group 1416" transform="translate(1608.684 697.774)">
+      <rect id="Rectangle_482" data-name="Rectangle 482" width="21" height="20" transform="translate(0.316 0.226)" stroke-width="2" stroke="#d4bb9f" stroke-linecap="square" stroke-linejoin="round" fill="none"/>
+      <line id="Line_41" data-name="Line 41" y2="20" transform="translate(10.316 0.226)" fill="none" stroke="#d4bb9f" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_42" data-name="Line 42" x2="21" transform="translate(0.316 10.226)" fill="none" stroke="#d4bb9f" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <path id="Path_1681" data-name="Path 1681" d="M1766,672.817V670h9.39v11.268" transform="translate(-134.683)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

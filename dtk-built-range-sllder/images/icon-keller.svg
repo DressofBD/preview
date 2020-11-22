@@ -1,0 +1,20 @@
+
+<svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13" transform="translate(1.000000, 1.000000)" stroke-width="2">
+            <g id="5f90456225840218ab61f4b0_bright_house" stroke-linecap="round" stroke-linejoin="round">
+                <polyline id="Path_1679" stroke="#D4BB9F" points="50.707 33.805 50.707 58.22 6.573 58.22 6.573 32.866"></polyline>
+                <polygon id="Path_1680" stroke="#464646" points="29.11 0 0 20.659 0 28.171 7.512 28.171 7.512 24.415 29.112 8.921 50.712 24.415 50.712 29.115 58.224 29.115 58.224 20.664"></polygon>
+                <polyline id="Path_1681" stroke="#464646" points="41.317 2.817 41.317 0 50.707 0 50.707 11.268"></polyline>
+            </g>
+            <polyline id="Path" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" points="15 37.22 15 24 22.4458008 24 22.4458008 37.22"></polyline>
+            <polyline id="Path-15" stroke="#D4BB9F" points="15.0883789 39.4404297 15.1972656 42.8291016 19.218977 42.8200626 19.218977 45.8667954 22.4665739 45.8667954 22.4665739 49.3118396 26.2091309 49.3118396 26.2091309 52.138453 29.9684551 52.138453 29.9684551 54.8625769 33.2944336 54.8625769 33.3950195 57.246582"></polyline>
+            <path d="M6.573,38.3122807 L50.707,38.3122807" id="Path-14" stroke="#D4BB9F"></path>
+            <g id="Group_1416-Copy-4" transform="translate(31.000000, 24.000000)" stroke="#464646" stroke-linecap="square" stroke-linejoin="round">
+                <rect id="Rectangle_482" x="0" y="0" width="11" height="11"></rect>
+                <path d="M5.5,0 L5.5,11" id="Line_41"></path>
+                <path d="M0,5.5 L11,5.5" id="Line_42"></path>
+            </g>
+        </g>
+    </g>
+</svg>
