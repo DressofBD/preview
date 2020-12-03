@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>acuvue</title>
+    <link rel="shortcut icon" type="image/icon" href="img/acuv.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: graphik-Bold;
+  src: url(assets/graphik-Bold.otf);
+}
+@font-face {
+  font-family: graphik-Semibold;
+  src: url(assets/graphik-Semibold.otf);
+}
+@font-face {
+  font-family: graphik-Regular;
+  src: url(assets/graphik-Regular.otf);
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'graphik-Regular';
+  font-size: 16px;
+  color: #084398;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.acuv {
+  max-width: 720px;
+  height: auto;
+  margin: 30px auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #868686;
+}
+.acuv .brdr {
+  position: absolute;
+  width: 94%;
+  height: 95%;
+  border: 2px solid #75d3f8;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 4% 3%;
+  z-index: 0;
+}
+.acuv h1{
+  margin: 0;
+}
+.acuv img{
+  max-width: 100%;
+  height: auto;
+}
+.acuv .pabsolute{
+  position: absolute;
+}
+.acuv .topimg {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px 44px;
+  z-index: 9;
+}
+.acuv .topimg img.focus {
+  max-width: 30%;
+}
+.acuv .topimg img.acuvt {
+  max-width: 50%;
+  float: right;
+}
+.acuv p {
+  text-align: left;
+  margin-bottom: 50px;
+  display: block;
+  font-size: 20px;
+}
+.acuv .acuvr{
+  max-width: 25%;
+  right: 8%;
+  top: 44%;
+  z-index: 9;
+}
+.acuv .application {
+  position: relative;
+  padding-right: 44px;
+  padding-left: 44px;
+  padding-top: 50px;
+  z-index: 9;
+}
+.acuv .application p span, .acuv .application p a{
+  color: #084398;
+  font-family: graphik-Semibold;
+}
+.acuv .fb {
+  width: 20px;
+}
+.acuv .mb-0 {
+  margin-bottom: 0;
+}
+.acuv .plast {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: graphik-Bold;
+}
+.acuv small {
+  float: right;
+  padding-right: 22px;
+  padding-bottom: 8px;
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:979px){
+.acuv {
+  width: 100%;
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+.acuv .application {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.acuv p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.acuv .topimg {
+  padding: 30px 30px;
+}
+.acuv .topimg img.acuvt {
+  max-width: 32%;
+}
+.acuv .acuvr {
+  top: 35%;
+}
+
+
+
+}
+</style>
+</head>
+   <body>
+      <section class="acuv">
+        <div class="brdr"></div>
+        <img src="assets/bg.jpg" class="top-bg">
+        <div class="pabsolute topimg">
+          <img src="assets/focus.png" class=" focus">
+          <a href="#!"> <img src="assets/acuvt.png" class=" acuvt"></a>
+        </div>
+        <img src="assets/acuv.png" class="pabsolute acuvr">
+        <div class="application">
+          <p><span> Dear Customer,</span></p>
+          <p>Register at <a href="https://www.acuvue.com.my/acuvuerewards" target="_blank"> www.acuvue.com.my/acuvuerewards</a> to <span> enjoy complimentary eye health examination worth RM100 and RM30 cashback</span> with purchase of the participating ACUVUE® products. T&Cs apply</p>
+          <p>Please contact <a href="https://www.facebook.com/AcuvueMalaysia" target="_blank"> ACUVUE® <img src="assets/fb.png" class="fb"> Malaysia (https://www.facebook.com/AcuvueMalaysia)</a> should you have any question.</p>
+          <p><strong> Take care and stay safe.</strong></p>
+          <p class="mb-0"><strong>Regards,</strong></p>
+          <p class="plast">FOCUS POINT</p>
+        </div>
+        <small>MY460</small>
+      </section>
+   </body>
+</html>
+
