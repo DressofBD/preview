@@ -888,6 +888,17 @@ section{
 
 
 
+
+
+
+/*Responsive*/
+
+@media(min-width: 1200px){
+  .container{
+    max-width: 991px;
+  }
+}
+
 @media(max-width: 1199px){
 .s5-block, .s5-top {
   width: 100%;
@@ -920,7 +931,7 @@ section{
   padding: 0 25%;
 }
 .s8-company {
-  max-width: 200px;
+  max-width: 100px;
   margin-left: 10px;
 }
 
@@ -1147,6 +1158,7 @@ section {
 }
 .s8-company {
   margin: 15px auto;
+  max-width: 145px;
 }
 .s8-btm-area {
   padding: 20px;
