@@ -541,13 +541,13 @@ section{
 .s5-top {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 .s5-top h3 {
   color: #FF9407;
-  font-size: 40px;
-  line-height: 45px;
+  font-size: 36px;
+  line-height: 60px;
 }
 .s5-top h3 span{
   color: #000;
@@ -1211,7 +1211,6 @@ section {
 
 
 }
-
 
 
 
