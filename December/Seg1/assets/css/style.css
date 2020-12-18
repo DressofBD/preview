@@ -826,7 +826,7 @@ section{
   display: flex;
   position: relative;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .s8-top-area h1 {
@@ -1211,5 +1211,8 @@ section {
 
 
 }
+
+
+
 
 
