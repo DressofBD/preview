@@ -5,16 +5,20 @@
 </head>
 <body>
 
+<div style="width: 500px;margin: 0 auto;display: block;position: relative;">
 <img src="1.png" class="img1">
-<img src="2.png" style="position: absolute;top: 51px;left: 167px;" class="img2">
-
+<img src="2.png" style="position: absolute;top: 20px;left: 90px;max-width: 76%;" class="img2">
+<img src="3.png" style="position: absolute;top: 34px;left: 80px;max-width: 76%;" class="img3">
+</div>
 
 <style type="text/css">
 	img{
+		max-width: 100%;
 		transition: 0.5s;
 	}
 	img:hover{
-		transform: scale(1.1);
+		transform: scale(1.01);
+		filter: grayscale(200%);
 	}
 </style>
 
