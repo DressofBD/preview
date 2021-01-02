@@ -3,22 +3,53 @@
 <head>
 	<title></title>
 </head>
-<body>
+<body style="overflow: hidden;">
 
-<div style="width: 500px;margin: 0 auto;display: block;position: relative;">
-<img src="1.png" class="img1">
-<img src="2.png" style="position: absolute;top: 20px;left: 90px;max-width: 76%;" class="img2">
-<img src="3.png" style="position: absolute;top: 34px;left: 80px;max-width: 76%;" class="img3">
+
+<div class="retina-block" style="display: block;margin: 0 auto;width: 100%;position: relative;left: 33%;margin-top: 70px">
+	<div>
+		<img src="images/Choroid.png" style="width: 236px;left: 51px;top: 9px;">
+		<h1 class="desc">Choroid</h1>
+	</div>
+	<div>
+		<img src="images/Sclera.png" style="width: 300px;top: 0px;left: 2px;">
+		<h1 class="desc">Sclera</h1>
+	</div>
+	<div>
+		<img src="images/Extraocular-Muscles.png" style="width: 120px;top: -13px;left: 27px;">
+		<h1 class="desc">Extraocular Muscles</h1>
+	</div>
+	<div>
+		<img src="images/middle.png" style="width: 227px;top: 21px;left: 48px;">
+		<h1 class="desc">middle</h1>
+	</div>
+	<div>
+		<img src="images/Retina.png" style="width: 223px;top: 15px;left: 58px;">
+		<h1 class="desc">Retina</h1>
+	</div>
 </div>
 
 <style type="text/css">
-	img{
-		max-width: 100%;
-		transition: 0.5s;
+	.desc {
+		display: none;
+		position: absolute;
+		margin-left: 351px;
+		margin-top: 40px;
 	}
 	img:hover{
 		transform: scale(1.01);
 		filter: grayscale(200%);
+	}
+	img:hover ~ .desc{
+		display: block;
+	}
+	img{
+		max-width: 100%;
+		transition: 0.5s;
+		width: 300px;
+		display: block;
+		margin: 0 auto;
+		position: absolute;
 	}
 </style>
 
