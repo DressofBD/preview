@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>PRUDENTIAL</title>
+    <link rel="shortcut icon" type="image/icon" href="assets/prudential.png">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: FSAlbertPro-Bold;
+  src: url(assets/FSAlbertPro-Bold.otf);
+}
+@font-face {
+  font-family: fsalbertpro-regular;
+  src: url(assets/fsalbertpro-regular.ttf);
+}
+@font-face {
+  font-family: FSAlbertPro-Light;
+  src: url(assets/FSAlbertPro-Light.otf);
+}
+@font-face {
+  font-family: FSAlbertPro-Light;
+  src: url(assets/FSAlbertPro-Light.ttf);
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: fsalbertpro-regular;
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.prud h1, h2, h3, h4, h5, h6, ul, ol, p{
+  margin: 0;
+  padding: 0;
+}
+.prud {
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  color: #68737A;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+}
+.prud img{
+  max-width: 100%;
+  height: auto;
+}
+.prud .pabsolute{
+  position: absolute;
+}
+.prud .prudential-logo {
+  max-width:  31%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  height: 225px;
+}
+.logo-section {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  text-align: left;
+  color: #68737A;
+  font-family: fsalbertpro-regular;
+  font-size: 35px;
+}
+.logo-section p{
+  font-family: FSAlbertPro-Light;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.logo-section h1 {
+  margin: 30px 0 0;
+}
+.logo-s-desc {
+  width: 66%;
+  background: #fff;
+  margin-left: 34px;
+  padding-left: 35px;
+  padding-bottom: 25px;
+  height: 225px;
+}
+.bnr-top-img{
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.percent10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+}
+.percent10-img {
+  max-width: 36% !important;
+  margin-right: 20px;
+}
+.premium-rate{
+  font-family: FSAlbertPro-Bold;
+}
+.premium-rate h1 {
+  font-size: 35px;
+  margin-top: 20px;
+}
+.premium-rate h2{
+  font-size: 20px;
+}
+.premium-rate img {
+  max-width: 280px;
+  height: 1px;
+  margin-bottom: 5px;
+}
+.pru-t{
+  font-family: FSAlbertPro-Bold;
+}
+.based-on-anual{
+  margin-bottom: 15px;
+}
+.call-btn {
+  margin: 20px auto;
+  width: 70%;
+  background: #ed1b2e;
+  border-radius: 20px;
+  position: relative;
+  color: #fff;
+  padding: 8px 40px;
+  font-size: 16px;
+}
+.call-btn a {
+  position: absolute;
+  left: -12px;
+  width: 50px;
+  top: -8px;
+  border-radius: 50%;
+  display: block;
+  text-decoration: none;
+}
+.privacy-policy .ppolicy-heading {
+  background: #ed1b2e;
+  color: #fff;
+  font-size: 17px;
+  padding: 8px 0;
+  border-radius: 10px;
+  font-family: fsalbertpro-regular;
+  margin-bottom: 17px;
+  text-align: center;
+}
+.privacy-policy {
+  margin-top: 45px;
+  text-align: left;
+  color: #000;
+  font-family: FSAlbertPro-Light;
+  line-height: 16px;
+  font-size: 13px;
+  padding-bottom: 35px !important;
+}
+.banner-btm, .privacy-policy {
+  padding: 0 30px;
+}
+.prud a{
+  text-decoration: none;
+}
+.prud ul > li {
+  list-style: decimal;
+}
+.prud ul > li > ol > li {
+  list-style: lower-alpha;
+}
+.privacy-policy > ul {
+  padding-left: 17px;
+}
+.privacy-policy ul > li > ol {
+  padding-left: 17px;
+}
+.privacy-policy li{
+  margin-bottom: 10px;
+}
+.privacy-policy a{
+  color: #000;
+}
+.policy-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 7px;
+  border-bottom: 1px solid #ccc;
+}
+.policy-tbl tr:nth-child(2n+1) {
+  background: #ededed;
+}
+.policy-tbl tr:first-child{
+  background: transparent;
+}
+.policy-tbl tr:first-child td {
+  color: #fff;
+  font-family: FSAlbertPro-Bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 0 !important;
+  padding: 8px 25px;
+}
+.policy-tbl tr:first-child td:nth-child(1) {
+  background: #ef7722;
+}
+.policy-tbl tr:first-child td:nth-child(2){
+  background: #40abc4;
+}
+.policy-tbl tr:first-child td:nth-child(3){
+  background: #f2bd5c;
+}
+.policy-tbl tr{}
+.policy-tbl tr td {
+  padding: 3px 25px;
+  border-left: 1px solid #ccc;
+}
+.policy-tbl tr td:last-child{
+  border-right: 1px solid #ccc;
+}
+.btm-date {
+  position: absolute;
+  bottom: 60px;
+  right: -7px;
+  transform: rotate(90deg);
+}
+
+
+@media screen and (max-width:560px){
+.prud {
+  width: 400px;
+}
+.logo-section {
+  font-size: 18px;
+  line-height: 25px;
+}
+.logo-section h1 {
+  margin: 15px 0 0;
+}
+.logo-section p {
+  margin-top: 3px;
+  line-height: 16px;
+}
+.prud .prudential-logo {
+  max-width: 33%;
+  height: 115px;
+}
+.logo-s-desc {
+  width: 65%;
+  margin-left: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  height: 115px;
+}
+.percent10 {
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.policy-tbl {
+  /*min-width: 450px;*/
+  overflow-x: scroll;
+}
+.policy-tbl tr td {
+  padding: 2px 5px;
+}
+.banner-btm, .privacy-policy {
+  padding: 0 10px;
+}
+.policy-tbl tr:first-child td {
+  padding: 5px;
+}
+.privacy-policy {
+  font-size: 11px;
+  margin-top: 30px;
+}
+.call-btn {
+  width: 97%;
+}
+.percent10-img {
+  max-width: 45% !important;
+}
+.btm-date {
+  bottom: 30px;
+}
+.privacy-policy ul > li > ol {
+  padding-left: 11px;
+}
+
+
+
+
+
+}
+</style>
+</head>
+   <body>
+      <section class="prud">
+        <div class="top-banner">
+          <div class="logo-section">
+            <div class="logo-s-desc">
+              <h1>Policy Maturity<br>Campaign</h1>
+              <p>Get more out of life when you're in good hands.</p>
+            </div>
+            <img src="assets/prudential.png" class="prudential-logo">
+          </div>
+          <img src="assets/banner.jpg" class="banner-img">
+          <img src="assets/bnr-top.png" class="pabsolute bnr-top-img">
+        </div>
+        <div class="banner-btm">
+          <div class="percent10">
+            <img src="assets/10percent.png" class="percent10-img">
+            <div class="premium-rate">
+              <h1>Premium Rebate<span>*</span></h1>
+              <img src="assets/b-brdr.png">
+              <h2>When you purchase a new policy</h2>
+            </div>
+          </div>
+          <p class="based-on-anual">*Based on the annual premium amount of the Eligible Policy. <span class="pru-t">PRU</span>Saver/<span class="pru-t">PRU</span>Saver Kid Premium,<br>
+          Single Premium Top-Up are excluded from the calculation of Rebate.</p>
+          <p>Terms & conditions apply.<br>
+            This product is underwritten by Prudential Assurance Malaysia Berhad.
+          </p>
+          <div class="call-btn">
+            <a href="#!"><img src="assets/call.png"></a>
+            For more details, contact your Prudential Wealth Planner now.
+          </div>
+        </div>
+        <div class="privacy-policy">
+          <div class="ppolicy-heading">Policy Maturity Campaign Terms and Conditions</div>
+          <ul>
+            <li>This Policy Maturity Campaign ("Campaign") is organized by Prudential Assurance Malaysia Berhad (“PAMB”, “we”, “our” or “us”). By joining this Campaign, you (“you”, “your” or “customer”) agree that you have read, understood and agreed to be bound by the Terms and Conditions of this Campaign and by any change or modification that we may make to the Campaign and/or the Terms and Conditions of the Campaign with prior notice to you, in which case such notice will be given by PAMB. <br>
+              By joining this Campaign, you further agree to be bound by our Privacy Policy accessible at <a href="https://www.prudential.com.my/en/footer/privacy-policy/" target="_blank">https://www.prudential.com.my/en/footer/privacy-policy/</a> .
+            </li>
+            <li>Campaign Mechanism: <br>
+                Campaign commences on 1 January 2021.
+                <ol>
+                  <li>Promotion period: Each batch of the maturing policy comes with 3 months promotion period. Submission of the new proposal must be within the promotion period.<br>
+                  Example: Mr. Lee’s policy maturing month is January 2021. The promotion period is open to Mr. Lee from 1 January until 31 March 2021.
+                  </li>
+                  <li>
+                    Captured period:<br>
+                    Example: Mr. Lee’s policy maturing month is January 2021. He purchased PRUWealth Plus, a new proposal with annual premium of RM8,000 on 3 March 2021.  The new proposal must be captured latest by 31 March 2021.
+                    <table class="policy-tbl" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>Policy Maturing Month</td>
+                        <td>Promotion/New Proposal Submission Period</td>
+                        <td>New Proposal Captured by</td>
+                      </tr>
+                      <tr>
+                        <td>January 2021</td>
+                        <td>1 January – 31 March 2021</td>
+                        <td>31 March 2021</td>
+                      </tr>
+                      <tr>
+                        <td>February 2021</td>
+                        <td>1 February – 30 April 2021</td>
+                        <td>30 April 2021</td>
+                      </tr>
+                      <tr>
+                        <td>March 2021</td>
+                        <td>1 March – 31 May 2021</td>
+                        <td>31 May 2021</td>
+                      </tr>
+                      <tr>
+                        <td>April 2021</td>
+                        <td>1 April – 30 June 2021</td>
+                        <td>30 June 2021</td>
+                      </tr>
+                      <tr>
+                        <td>May 2021</td>
+                        <td>1 May – 31 July 2021</td>
+                        <td>31 July 2021</td>
+                      </tr>
+                      <tr>
+                        <td>June 2021</td>
+                        <td>1 June – 31 August 2021</td>
+                        <td>31 August 2021</td>
+                      </tr>
+                      <tr>
+                        <td>July 2021</td>
+                        <td>1 July – 30 September 2021</td>
+                        <td>30 September 2021</td>
+                      </tr>
+                      <tr>
+                        <td>August 2021</td>
+                        <td>1 August – 31 October 2021</td>
+                        <td>31 October 2021</td>
+                      </tr>
+                      <tr>
+                        <td>September 2021</td>
+                        <td>1 September – 30 November 2021</td>
+                        <td>30 November 2021</td>
+                      </tr>
+                      <tr>
+                        <td>October 2021</td>
+                        <td>1 October – 31 December 2021</td>
+                        <td>31 December 2021</td>
+                      </tr>
+                      <tr>
+                        <td>November 2021</td>
+                        <td>1 November 2021 – 31 January 2022</td>
+                        <td>31 January 2022</td>
+                      </tr>
+                      <tr>
+                        <td>December 2021</td>
+                        <td>1 December 2021 – 28 February 2022</td>
+                        <td>28 February 2022</td>
+                      </tr>
+                    </table>
+                  </li>
+                </ol>
+            </li>
+            <li>
+              Campaign Eligibility:<br>
+              <ol>
+                <li>This Campaign is open to the assured or life assured of the matured policy who purchased new policy of any regular premium (RP) plan and submitted the    proposal to PAMB within the promotion period stated in clause 2(a) whereby such policy has already been captured within the captured period stated in clause  2(b) (“Eligible Customer”).</li>
+                <li>A policy is an Eligible Policy where, the Eligible Customer:<br>
+                  i. Submits the new proposal form through PRUWay Plus and the policy must be in-force at all times with no partial withdrawal performed on the policy; and<br>
+                  ii. All premium payments for the policy must be up-to-date at all times at the time of crediting. If policy with premium payments that remain outstanding upon
+                  the expiry of the 30-day grace period, Eligible Customer will be disqualified from participating in this Campaign.
+                </li>
+                <li>
+                  To participate in this Campaign and to receive the Rebate (as hereinafter defined), the Eligible Customer must provide PAMB with his/her valid bank
+                  account details, which include the bank account name and bank account number (“Bank Account Details”). The Bank Account Details must be current, valid and
+                  subsisting of which the Bank Account Details must be captured within PAMB’s system upon proposal submission.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Campaign Rewards:<br>
+              <ol>
+                <li>
+                  Each Eligible Policy will be entitled to a 10% Premium Rebate (“Rebate”) based on the annual premium amount of the Eligible Policy. <span class="pru-t">PRU</span>Saver/<span class="pru-t">PRU</span>Saver Kid
+                  Premium, Single Premium Top-Up are excluded from the calculation of Rebate.
+                </li>
+                <li>
+                  Once the Eligible Customer fulfils the Campaign Eligibility as per clause 3, the Rebate will be credited into the Eligible Customer’s bank account 3 months after
+                  the Eligible Policy is captured. SMS will be sent to the Eligible Customer’s registered mobile number with PAMB to inform the Eligible Customer that the Rebate
+                  has been credited into the Eligible Customer’s Bank Account. The Cashback will be forfeited in the event of:<br>
+                  i. no Bank Account Details provided as per clause 3 (c); or<br>
+                  ii. unsuccessful Cashback crediting due to invalid identification number or invalid Bank Account Details or invalid bank account status (suspended, cancelled or terminated); or<br>
+                  iii. any other reasons that caused unsuccessful Campaign Rewards crediting. 
+                </li>
+              </ol>
+            </li>
+            <li>
+              The Eligible Customer is solely responsible for maintaining the accuracy of his/her information at all times. PAMB may also request for further information from the
+              Eligible Customer to determine the authenticity of any information provided, including whether it is fraudulent or exaggerated.
+            </li>
+            <li>. By joining this Campaign, the Eligible Policy is not entitled to a reward under any concurrent promotion and/or campaign organized by PAMB.</li>
+            <li>PAMB shall have the discretion to decide in respect of all matters and disputes concerning this Campaign in accordance with treating Eligible Customer fairly,
+            including substituting the Campaign Rewards with other form of gifts/rewards of equivalent value.</li>
+            <li>PAMB may decline the Campaign Rewards entitlement in the event any of the Terms and Conditions pursuant to this Campaign is not fulfilled.</li>
+            <li>For all intent and purposes, the Campaign Rewards provided hereunder shall not in any event be construed as a variation to the Terms and Conditions under the
+            Proposal(s) (“Terms”). The Terms shall continue in full force and effect. All insurance proposals are subject to PAMB’s standard processing and/or underwriting rules.
+            Further, the Campaign Rewards shall not form part of the rights, benefits and monies payable under the Eligible Policy</li>
+            <li>These Terms and Conditions shall be governed by and construed in accordance with the laws of Malaysia and the Eligible Customer agrees to submit to the
+            exclusive jurisdiction of the courts of Malaysia.</li>
+            <li>. This Campaign's Terms and Conditions may be provided in English, Chinese and Bahasa Malaysia. In case of any inconsistencies between these three versions,
+            the English version shall prevail.</li>
+          </ul>
+          <p class="btm-date">01/2021</p>
+        </div>
+      </section>
+   </body>
+</html>
+
