@@ -713,7 +713,9 @@ header {
 .header-top h5 {
   font-size: 16px;
 }
-
+.bootstrap-carousel::after {
+  opacity: .3;
+}
 
 
 
@@ -802,6 +804,9 @@ footer.footer .footer-link li a {
 }
 footer.footer .footer-link {
   justify-content: space-evenly;
+}
+.bootstrap-carousel .carousel-indicators {
+  margin-bottom: 15px;
 }
 
 }
