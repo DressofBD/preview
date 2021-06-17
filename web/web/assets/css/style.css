@@ -342,7 +342,9 @@ header {
 
 
 /*section2*/
-.section2{}
+.section2 {
+  min-height: 850px;
+}
 .s-brdr {
   border-bottom: 2px solid #5aab33;
   width: 35px;
@@ -681,6 +683,7 @@ footer.footer .submit-btn:hover{
 @media (max-width: 1200px){
 .bootstrap-carousel {
   position: relative;
+  display: none;
 }
 .navbar-light .navbar-nav .nav-link {
   padding: 8px 0;
@@ -707,7 +710,7 @@ header {
 }
 .banner-area {
   max-width: 100%;
-  margin: 3% auto 0;
+  margin: 2% auto 0;
 }
 .header-top h5 {
   font-size: 16px;
@@ -717,6 +720,7 @@ header {
 }
 .section1 {
   padding-top: 0;
+  min-height: auto;
 }
 
 
