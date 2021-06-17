@@ -682,25 +682,24 @@ footer.footer .submit-btn:hover{
 .bootstrap-carousel {
   position: relative;
 }
-header, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #1c1b1b;
-}
 .navbar-light .navbar-nav .nav-link {
-  color: #1c1b1b;
   padding: 8px 0;
   text-transform: uppercase;
   display: inline;
 }
-.header-top .social-icons a:hover {
-  border: 2px solid #000;
-  color: #000;
-}
-.navbar-light .navbar-nav .active > .nav-link {
-  border-bottom: 1px solid #1c1b1b;
-}
 header {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+  background-image: url(../images/header-mobile-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/*header:after{
+  content: "";
+  background: rgb(1, 1, 1);
+  position: absolute;
+  width: 100%;
+}*/
 .slow-steady-title {
   font-size: 20px;
   margin-bottom: 10px;
@@ -708,7 +707,7 @@ header {
 }
 .banner-area {
   max-width: 100%;
-  margin: 7% auto 0;
+  margin: 3% auto 0;
 }
 .header-top h5 {
   font-size: 16px;
@@ -716,7 +715,9 @@ header {
 .bootstrap-carousel::after {
   opacity: .3;
 }
-
+.section1 {
+  padding-top: 0;
+}
 
 
 
@@ -746,7 +747,9 @@ section {
   margin: 20px 0 0;
   font-size: 14px;
 }
-
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 
 
