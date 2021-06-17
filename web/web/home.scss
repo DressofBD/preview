@@ -1,0 +1,220 @@
+$primary: #5aab33;
+$secondary: #2a2a2a;
+
+body {
+font-family: Montserrat, Sans-Serif;
+}
+
+header {
+display: grid;
+position: relative;
+background: black;
+
+.header-content {
+    grid-area: 1 / 1;
+    max-width: 1480px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+    margin: 10px 0;
+    width: 250px;
+    max-width: 50%;
+    }
+
+    .right-content {
+    padding-top: 36px;
+    text-align: right;
+
+    h2 {
+        color: white;
+        font-size: 18px;
+    }
+
+    .social-icons {
+        a {
+        border: 2px solid $primary;
+        color: $primary;
+        border-radius: 40px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding-top: 2px;
+        font-size: 22px;
+        }
+
+        padding-bottom: 10px;
+    }
+
+    button {
+        border: 0;
+        border-radius: 20px;
+        background-color: $primary;
+        font-size: 12px;
+        padding: 5px 14px;
+
+        a {
+        color: white;
+        text-decoration: none;
+        }
+    }
+    }
+}
+
+.sector-Gallery {
+    grid-area: 1 / 1;
+    opacity: 0.4;
+}
+
+.sector-GalleryOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 18vw;
+    text-align: center;
+
+    h1 {
+    display: inline;
+    }
+}
+}
+
+nav {
+ul {
+    justify-content: space-between;
+}
+
+button {
+    width: auto;
+    max-width: auto;
+    min-width: auto;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.page-name {
+    color: white;
+}
+
+.navbar-collapse {
+    margin: 0 auto;
+    max-width: 1480px;
+}
+
+a {
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.active a {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item, .dropdown-item.active {
+    padding: 10px;
+    background-color: $primary;
+    opacity: 0.9;
+    text-align: center;
+    border-width: 2px 0 0 0;
+    border-color: white;
+    border-style: solid;
+}
+
+.dropdown-item:hover {
+    background-color: $primary;
+    opacity: 0.7;
+}
+}
+
+.device-desktop .mobile-nav-self {
+display: none;
+}
+
+.device-phone {
+.dropdown-item {
+    background-color: $primary;
+}
+
+.nav-justified .nav-item {
+    text-align: right;
+}
+}
+
+.sector-1 {
+width: 1480px;
+margin: 0 auto;
+padding: 100px 65px;
+}
+
+footer {
+.icon-left {
+    float: left;
+    display: block;
+    height: auto;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+h5 {
+    color: $primary !important;
+}
+
+.fa, .fal, .fab {
+    color: $primary !important;
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.footer-nav ul {
+    padding-left: 0;
+}
+
+.nav-link {
+    padding: 4px 0;
+}
+
+a:link, a:visited {
+    color: $secondary !important;
+}
+
+.nav-link:link, .nav-link:visited {
+    text-transform: uppercase;
+}
+}
+
+
+/* Home page Claire bubble */
+.style-60c818e34925db0045c0224d {
+background-color: $primary;
+position: relative;
+top: -180px;
+border-radius: 180px;
+width: 360px;
+height: 360px;
+left: 50px;
+padding: 74px 62px;
+text-align: center;
+
+&::first-line {
+    font-weight: bold;
+    font-size: 18px;
+}
+}
